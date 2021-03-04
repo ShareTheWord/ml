@@ -1,23 +1,77 @@
-<mxfile host="app.diagrams.net" modified="2021-03-04T13:20:37.510Z" agent="5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="eE7aHl0F3QCfB1bCe679" version="14.4.3" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-04T14:07:31.842Z" agent="5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="OrPIr9QYqZ50P563NklM" version="14.4.3" type="github">
   <diagram id="bMwFym-hlDFemxBoZi8h" name="Page-1">
-    <mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="998" dy="678" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="GZBw23n20FDLDAzGsvCB-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GZBw23n20FDLDAzGsvCB-1" target="GZBw23n20FDLDAzGsvCB-2">
+        <mxCell id="GZBw23n20FDLDAzGsvCB-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GZBw23n20FDLDAzGsvCB-1" target="GZBw23n20FDLDAzGsvCB-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GZBw23n20FDLDAzGsvCB-1" value="4层网络结构&lt;br&gt;7层网络结构&lt;br&gt;从底向上的网络分层" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="loJ7woKKY6Tc8nl-rran-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="GZBw23n20FDLDAzGsvCB-1" target="loJ7woKKY6Tc8nl-rran-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GZBw23n20FDLDAzGsvCB-1" target="loJ7woKKY6Tc8nl-rran-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GZBw23n20FDLDAzGsvCB-1" target="loJ7woKKY6Tc8nl-rran-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="GZBw23n20FDLDAzGsvCB-1" target="loJ7woKKY6Tc8nl-rran-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="GZBw23n20FDLDAzGsvCB-1" value="4层网络结构&lt;br&gt;7层网络结构&lt;br&gt;从底向上的网络分层" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="20" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GZBw23n20FDLDAzGsvCB-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="GZBw23n20FDLDAzGsvCB-2" target="GZBw23n20FDLDAzGsvCB-4">
+        <mxCell id="GZBw23n20FDLDAzGsvCB-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GZBw23n20FDLDAzGsvCB-2" target="GZBw23n20FDLDAzGsvCB-4" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="GZBw23n20FDLDAzGsvCB-2" value="物理层" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="GZBw23n20FDLDAzGsvCB-2" value="物理层" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="190" y="80" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="GZBw23n20FDLDAzGsvCB-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="390" y="80" width="120" height="60" as="geometry" />
+        <mxCell id="GZBw23n20FDLDAzGsvCB-4" value="物理层给各个电脑连接起来（网线或者wifi），还传输最底层的0和1电路信号" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="85" width="410" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="loJ7woKKY6Tc8nl-rran-1" target="loJ7woKKY6Tc8nl-rran-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-1" value="数据链路层" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="247.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-3" value="数据链路层，物理层给各个电脑连接起来了，还传输最底层的0和1电路信号，关键不行啊，你得定义清楚哪些0和1分为一组，这些信号啥意思？这才能进行通信。所以数据链路层就干这事儿，定义一下电路信号咋分组。&lt;br&gt;&lt;br&gt;以前每个公司都定义自己的电脑信号分组方式，后来有了以太网协议，一组电信号是一个数据包，也就是一个帧，包含标头和数据，标头里边包含一些说明性的东西，比如发送者，接受者，数据类型等等，在以太网里传输数据包的时候，必须指定接受者的mac地址才能传输数据，&lt;span&gt;但是以太网的数据包怎么从一个mac地址发送到另一个mac地址？这个不是精准推送的，以太网里面，如果一个电脑发个数据包出去，会广播给局域网内的所有电脑设备的网卡，然后每台电脑都从数据包里获取接收者的mac地址，跟自己的mac地址对比一下，如果一样，就说明这是发给自己的数据包。&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;但是上面这种广播的方式，仅仅针对一个子网（局域网）内的电脑，会广播，否则一个电脑不能广播数据包给全世界所有的其他电脑吧，是仅仅广播给一个子网里面的电脑的。&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="400" y="185" width="580" height="185" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-5" value="上面说到，子网内的电脑，通过以太网发个数据包，对局域网内的电脑，是广播出去的。那么怎么知道哪些电脑在一个子网内呢？这就得靠网络层了，这里就有一套IP地址，IP地址就可以让我们区分哪些电脑是一个子网的。&lt;br&gt;&lt;br&gt;网络层里有IP协议，IP协议定义的地址就叫做IP地址。IP地址有IPv4和IPv6两个版本&lt;br&gt;&lt;br&gt;有了网络层的ip地址之后，两台在子网内的电脑终于可以通过广播+mac地址判断来传输数据包进行通信了。&lt;br&gt;&lt;br&gt;一个子网内的机器之间通信，就是在数据包里写上对方的mac地址，然后交换机广播出去ok了；但是如果是跨子网的通信，就是写上对方的ip地址，然后先通过mac地址广播到路由器，让路由器再根据另外一个子网的ip地址转换为mac地址，通过另外一个子网的交换机广播过去。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="460" y="420" width="520" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="loJ7woKKY6Tc8nl-rran-6" target="loJ7woKKY6Tc8nl-rran-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-6" value="网络层" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="485" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="loJ7woKKY6Tc8nl-rran-9" target="loJ7woKKY6Tc8nl-rran-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-9" value="传输层" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="180" y="702.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-11" value="很多个程序（QQ、浏览器，等等）用一个网卡进行网络通信&lt;br&gt;&lt;br&gt;网络层，是基于ip协议，进行主机和主机间的寻址和通信的，然后传输层，其实是建立某个主机的某个端口，到另外一个主机的某个端口的连接和通信的。这个通信，就是通过socket来实现的，通过socket就可以基于tcp/ip协议完成刚才上面说的一系列的比如基于ip地址和mac地址转换和寻址啊，通过路由器通信啊之类的，而且会建立一个端口到另外一个端口的连接。&lt;br&gt;&lt;br&gt;&lt;div&gt;udp和tcp都是传输层的协议，作用就是在数据包里加入端口号，可以通过端口号进行点对点的通信了。udp协议是不可靠的，发出去人家收到没有就不知道了；tcp协议是可靠的，要求三次握手，而且要求人家接收到数据必须回复你。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;传输层的tcp协议，仅仅只是规定了一套基于端口的点对点的通信协议，包括如何建立连接，如何发送和读取消息，但是实际上如果你要基于tcp协议来开发，你一般是用socket，java socket网络编程&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="460" y="635" width="630" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="loJ7woKKY6Tc8nl-rran-13" target="loJ7woKKY6Tc8nl-rran-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="loJ7woKKY6Tc8nl-rran-13" target="loJ7woKKY6Tc8nl-rran-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-13" value="应用层" style="rounded=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="190" y="945" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-15" value="通过传输层的tcp协议可以传输数据，但是人家收到数据之后，怎么来解释？比如说收到个邮件你怎么处理？收到个网页你怎么处理？类似这个意思，所以针对各种不同的应用，邮件、网页之类的，都是定义不同的应用层协议的。这个应用层，我们就假设综合了会话层、表示层和应用层了，3层合成1层。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="470" y="870" width="610" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="loJ7woKKY6Tc8nl-rran-17" value="&lt;span&gt;4层：数据链路层（以太网协议），网络层（ip协议），传输层（tcp协议），应用层（http协议）&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;7层：物理层（网线，海底光缆，传递0/1电路信号），会话层、表示层、应用层 -&amp;gt; 应用层&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="470" y="1005" width="610" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
