@@ -1,1 +1,73 @@
-<mxfile host="app.diagrams.net" modified="2021-03-05T03:13:22.137Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" version="14.4.3" etag="8-12PMy_On8CSzfAvno6" type="github"><diagram id="rSSRLArOoslDTdb2hbNu">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-05T03:37:00.708Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="vGq4Kjw7wHT2ovMXkkYd" version="14.4.3" type="github">
+  <diagram id="rSSRLArOoslDTdb2hbNu" name="第 1 页">
+    <mxGraphModel dx="866" dy="534" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OYBuaDauncbpDj6LAISx-21" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="50" y="70" width="960" height="980" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-2" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; text-align: justify ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;ip&lt;font face=&quot;宋体&quot;&gt;地址：&lt;/font&gt;&lt;font face=&quot;Calibri&quot;&gt;192.168.31.37&lt;/font&gt;&lt;/span&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; text-align: justify ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;子网掩码：&lt;/font&gt;255.255.255.0&lt;/span&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; text-align: justify ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;网关地址：&lt;/font&gt;192.168.31.0&lt;/span&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; text-align: justify ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;DNS&lt;font face=&quot;宋体&quot;&gt;地址：&lt;/font&gt;&lt;font face=&quot;Calibri&quot;&gt;8.8.8.8&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; text-align: justify ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;font face=&quot;Calibri&quot;&gt;mac地址：xx.xx.xx.xx&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="OYBuaDauncbpDj6LAISx-21">
+          <mxGeometry y="150" width="240" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-8" value="走应用层的http协议&lt;br&gt;http协议（http请求报文）=请求方法+请求头+请求体&lt;br&gt;请求方法：&lt;span style=&quot;font-size: 10.5pt ; text-align: justify&quot;&gt;&amp;nbsp;URL&lt;/span&gt;&lt;font face=&quot;宋体&quot; style=&quot;font-size: 10.5pt ; text-align: justify&quot;&gt;地址 &lt;/font&gt;&lt;font face=&quot;Calibri&quot; style=&quot;font-size: 10.5pt ; text-align: justify&quot;&gt;+ http&lt;/font&gt;&lt;font face=&quot;宋体&quot; style=&quot;font-size: 10.5pt ; text-align: justify&quot;&gt;版本：比如&lt;/font&gt;&lt;font face=&quot;Calibri&quot; style=&quot;text-align: justify&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;GET http://172.194.26.108/test HTTP/1.1&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 14px&quot;&gt;请求头：&lt;br&gt;&lt;/span&gt;&lt;div&gt;Host: upload.jiangsu.io&lt;/div&gt;&lt;div&gt;Proxy-Connection: keep-alive&lt;/div&gt;&lt;div&gt;User-Agent: Mozilla/5.0&lt;/div&gt;&lt;div&gt;请求体：比如是一个json&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;最后在应用层根据http协议搞一个http请求报文，然后搞一个数据包出来，仅有数据包，此时数据包没有头&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="OYBuaDauncbpDj6LAISx-21">
+          <mxGeometry x="520" y="10" width="440" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-9" value="到传输层&lt;br&gt;这个层是tcp协议，这个tcp协议会让你设置端口，发送方的端口随机选一个，接收方的端口一般是默认的80端口&lt;br&gt;&lt;br&gt;这个时候，会把应用层数据包给封装到tcp数据包中去，而且会加一个tcp头，这个tcp数据包是对应一个tcp头的，这个tcp头里就放了端口号信息。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="OYBuaDauncbpDj6LAISx-21">
+          <mxGeometry x="525" y="270" width="430" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-11" value="接着跑到网络层来了&lt;br&gt;走ip协议，这个时候会把tcp头和tcp数据包，放到ip数据包里去，然后再搞一个ip头，ip头里本机和目标机器的ip地址。这里本机ip地址是192.168.31.37，目标机器是172.194.26.108。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="OYBuaDauncbpDj6LAISx-21">
+          <mxGeometry x="535" y="445" width="410" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-13" value="接着是数据链路层&lt;br&gt;这块走以太网协议，这里是把ip头和ip数据包封到以太网数据包里去，然后再加一个以太网数据包的头，头里放了本机网卡mac地址，和网关的mac地址。但是以太网数据包的限制是1500个字节，但是假设这个时候ip数据包都5000个字节了，那么需要将ip数据包切割一下" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="OYBuaDauncbpDj6LAISx-21">
+          <mxGeometry x="535" y="580" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-15" value="这几个以太网数据包都会通过交换机发到你的网关上，然后你的路由器是可以联通别的子网的，这个是时候你的路由器就会转发到别的子网的可能也是某个路由器里去，然后以此类推吧，N多个路由器或者你叫网关也行，N多个网关转发之后，就会跑到百度的某台服务器，接收到几个以太网数据包。" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="OYBuaDauncbpDj6LAISx-21">
+          <mxGeometry x="550" y="720" width="360" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-17" value="百度服务器接收到4个以太网数据包以后，根据ip头的序号，把4个以太网数据包里的ip数据包给拼起来，就还原成一个完整的ip数据包了。接着就从ip数据包里面拿出来tcp数据包，再从tcp数据包里取出来http数据包，读取出来http数据包里的各种协议内容，接着就是做一些处理，然后再把响应结果封装成htp响应报文，封装在http数据包里，再一样的过程，封装tcp数据包，封装ip数据包，封装以太网数据包，接着通过网关给发回去" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="OYBuaDauncbpDj6LAISx-21">
+          <mxGeometry x="540" y="870" width="380" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-20" value="" style="group" vertex="1" connectable="0" parent="OYBuaDauncbpDj6LAISx-21">
+          <mxGeometry x="60" width="386" height="430" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-1" value="&lt;p class=&quot;MsoNormal&quot; style=&quot;margin: 0pt 0pt 0.0001pt ; text-align: justify ; font-family: &amp;#34;calibri&amp;#34; ; font-size: 10.5pt&quot;&gt;&lt;span style=&quot;font-size: 10.5pt&quot;&gt;&lt;font face=&quot;宋体&quot;&gt;用浏览器请求一个链接的时候，经历了哪些过程&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="OYBuaDauncbpDj6LAISx-20">
+          <mxGeometry width="180" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-3" value="打开一个浏览器，请求www.baidu.com地址" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="OYBuaDauncbpDj6LAISx-20">
+          <mxGeometry x="244" y="50" width="136" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-4" value="DNS服务器解析域名解析出ip地址，并与子网掩码ip地址做与运算，将计算结果与本机ip比较，是不是一个子网，发现不是&lt;br&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="OYBuaDauncbpDj6LAISx-20">
+          <mxGeometry x="241" y="170" width="142" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="OYBuaDauncbpDj6LAISx-20" source="OYBuaDauncbpDj6LAISx-3" target="OYBuaDauncbpDj6LAISx-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-6" value="发送一个数据包给网关，其实你就认为是我们的路由器吧，就是192.168.31.1&lt;br&gt;&lt;br&gt;将数据包先通过以太网协议广播到网关上去，通过网关再给他发送出去" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="OYBuaDauncbpDj6LAISx-20">
+          <mxGeometry x="238" y="310" width="148" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="OYBuaDauncbpDj6LAISx-20" source="OYBuaDauncbpDj6LAISx-4" target="OYBuaDauncbpDj6LAISx-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="OYBuaDauncbpDj6LAISx-21" source="OYBuaDauncbpDj6LAISx-6" target="OYBuaDauncbpDj6LAISx-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="OYBuaDauncbpDj6LAISx-21" source="OYBuaDauncbpDj6LAISx-8" target="OYBuaDauncbpDj6LAISx-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-12" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="OYBuaDauncbpDj6LAISx-21" source="OYBuaDauncbpDj6LAISx-9" target="OYBuaDauncbpDj6LAISx-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="OYBuaDauncbpDj6LAISx-21" source="OYBuaDauncbpDj6LAISx-11" target="OYBuaDauncbpDj6LAISx-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="OYBuaDauncbpDj6LAISx-21" source="OYBuaDauncbpDj6LAISx-13" target="OYBuaDauncbpDj6LAISx-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OYBuaDauncbpDj6LAISx-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="OYBuaDauncbpDj6LAISx-21" source="OYBuaDauncbpDj6LAISx-15" target="OYBuaDauncbpDj6LAISx-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
