@@ -1,1 +1,70 @@
-<mxfile host="app.diagrams.net" modified="2021-03-08T06:05:19.402Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" version="14.4.4" etag="yB_gEDVhFZ1gHdHsZ-Ns" type="github"><diagram id="p4r6dDJ0hlWNhRUB2B_c">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-08T09:36:31.767Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="NKSJ8tm4eoHKV5U4wjOB" version="14.4.4" type="github">
+  <diagram id="p4r6dDJ0hlWNhRUB2B_c" name="第 1 页">
+    <mxGraphModel dx="866" dy="1755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eVI2LMavUw_wi4JRrqKb-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eVI2LMavUw_wi4JRrqKb-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eVI2LMavUw_wi4JRrqKb-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-1" value="分布式文件系统" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="140" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-13" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="300" y="-110" width="800" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-9" value="为什么要用" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eVI2LMavUw_wi4JRrqKb-13">
+          <mxGeometry y="65.71428571428571" width="127.99999999999997" height="68.57142857142857" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-11" value="1. 存储电商项目里海量的图片，还有系统里其他的一些文件（电商平台海量小文件存储的需求，比如一台图片服务器放不下1亿张图片，就采用分布式文件系统，部署在多台图片服务器上，每台服务器存放一部分图片，就可以利用多台机器的存储空间放下海量的图片资源了）&lt;br&gt;2. 也可以使用fastdfs，C语言开发的一套分布式文件系统，特别适合用作大量小文件的分布式存储系统，但是社区不活跃，里边很多的bug和坑，用在生产环境会有很多的问题；；；fastdfs用c写的，你不可能看他的源码，很难去解决和处理他里面发生的一些故障什么的&lt;br&gt;3.很多中小型公司会选择采用云服务商，按需付费，使用了多少存储空间，就给他付费多少钱，人家云平台就是自己构建了一套分布式文件系统&lt;br&gt;&lt;br&gt;最后：&lt;br&gt;1.&amp;nbsp;&amp;nbsp;我们公司需要把核心的一些图片等数据保留在自己这里，所以说选择基础架构团队自己开发了一套分布式文件系统来存放我们系统里的核心的图片数据，因为开源的fastdfs肯定是不好用的&lt;br&gt;2.&amp;nbsp;如果用第三方的云服务，其实也暂时不能完全去信赖他们" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eVI2LMavUw_wi4JRrqKb-13">
+          <mxGeometry x="223.99999999999997" width="575.9999999999999" height="199.99999999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eVI2LMavUw_wi4JRrqKb-13" source="eVI2LMavUw_wi4JRrqKb-9" target="eVI2LMavUw_wi4JRrqKb-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eVI2LMavUw_wi4JRrqKb-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-18" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="300" y="120" width="540" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-14" value="大数据领域的hadoop hdfs，分布式文件系统,带来的启示" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eVI2LMavUw_wi4JRrqKb-18">
+          <mxGeometry y="20" width="127.05882352941177" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-16" value="1. hdfs是解决超大文件日志分析的问题（不可能一个大文件就一个计算任务扫描好几天），把大文件拆分为小文件，分散在许多机器上，每台机器有N个计算任务，每个计算任务对这个小文件进行分析，最后汇总所有个计算任务结果&lt;br&gt;2. 参照hdfs架构和源码来写我们的分布式文件系统&lt;br&gt;3. 技术上用到了磁盘读写、网络通信、数据传输、NIO技术" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eVI2LMavUw_wi4JRrqKb-18">
+          <mxGeometry x="222.35294117647058" y="-5" width="317.64705882352945" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eVI2LMavUw_wi4JRrqKb-18" source="eVI2LMavUw_wi4JRrqKb-14" target="eVI2LMavUw_wi4JRrqKb-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-23" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="300" y="295" width="660" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-19" value="分布式系统的Master-Slave架构设计" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eVI2LMavUw_wi4JRrqKb-23">
+          <mxGeometry y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-21" value="1. 分布式文件系统有两个角色，一个是管控角色（Master），负责管控整个集群，感知各个机器上的进程状态，每个机器上存放图片的情况，剩余多少存储空间&lt;br&gt;2. 另一个是管理的角色（Slave）是一个进程，每台机器上部署，负责管理机器上的存放的那些小图片和小文件&lt;br&gt;3.&amp;nbsp;客户端需要来上传图片，就可以先找管控进程，告诉他哪台机器上有空间，客户端就上传图片到那台机器上去就可以了&lt;br&gt;4. Slave必须给Master心跳续约，如果Master发现某个Slave一段时间内没有上报心跳，认为他宕机" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eVI2LMavUw_wi4JRrqKb-23">
+          <mxGeometry x="222" width="438" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eVI2LMavUw_wi4JRrqKb-23" source="eVI2LMavUw_wi4JRrqKb-19" target="eVI2LMavUw_wi4JRrqKb-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eVI2LMavUw_wi4JRrqKb-24" target="eVI2LMavUw_wi4JRrqKb-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-24" value="代码部分" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="300" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-25" value="1. Slave节点定时上报心跳&lt;br&gt;2. Master节点基于心跳机制的故障节点检测&lt;br&gt;3. 基于个gRPC实现Master-Slave节点之间的通信" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="524" y="460" width="306" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
