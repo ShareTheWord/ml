@@ -1,11 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2021-03-10T08:34:28.196Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="jTDptPU_LLy99HUUWX02" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-10T09:04:43.843Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="HEP--rC4Xumn22VDCajV" version="14.4.4" type="github">
   <diagram id="p4r6dDJ0hlWNhRUB2B_c" name="第 1 页">
-    <mxGraphModel dx="1181" dy="1928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="866" dy="1755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-48" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-168" value="" style="group" vertex="1" connectable="0" parent="1">
           <mxGeometry x="160" y="-106" width="1940" height="4216" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-48" value="" style="group" vertex="1" connectable="0" parent="Ek_NRwgekpg9dCOg00uJ-168">
+          <mxGeometry width="1940" height="4216" as="geometry" />
         </mxCell>
         <mxCell id="Ek_NRwgekpg9dCOg00uJ-40" value="" style="group" vertex="1" connectable="0" parent="Ek_NRwgekpg9dCOg00uJ-48">
           <mxGeometry width="1940" height="3720" as="geometry" />
@@ -359,10 +362,34 @@
         <mxCell id="jODEPjkdc7zOePpG8NlD-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-48" source="-X3LDDrEnEWQOY-GoYjN-15" target="jODEPjkdc7zOePpG8NlD-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-X3LDDrEnEWQOY-GoYjN-15">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-168" source="-X3LDDrEnEWQOY-GoYjN-15">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="1390" y="3079" as="targetPoint" />
+            <mxPoint x="1230" y="3086" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_NRwgekpg9dCOg00uJ-169" target="Ek_NRwgekpg9dCOg00uJ-171">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_NRwgekpg9dCOg00uJ-169" target="Ek_NRwgekpg9dCOg00uJ-173">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_NRwgekpg9dCOg00uJ-169" target="Ek_NRwgekpg9dCOg00uJ-174">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-169" value="&lt;b&gt;内存文件目录树在磁盘文件持久化方式的设计&lt;/b&gt;&lt;br&gt;每次fsimage代表了一颗文件目录树，每次启动直接把这个数据读取到NameNode或者是BackupNode内存里&lt;br&gt;hadoop的话呢，fsimage格式是设计的非常复杂的，其实如果用简单点的方式来实现，也就是一个JSON就可以了，直接用fastjson把他转换为一个超大的json，写入磁盘文件就可以了,这个不分段存储？是的，你这次写了一个最新的fsimage文件，上一个fsimage文件就可以给删除了&lt;br&gt;&lt;br&gt;&lt;div&gt;开启一个后台线程，定时的触发checkpint机制，把内存文件目录树，打成一个大的JSON，然后基于NIO给写入到磁盘文件里去，每个小时做一个checkpoint快照，然后接下来就保留最近一小时的editslog即可&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;下一个小时再做一个checkpoint快照，然后之前的editslog清空，再保留最近一小时的editslog即可，每个小时都有一个快照，大不了如果NameNode宕机了，就读取上一次checkpoint快照，接着把最近积累的1小时内的editslog读进内存，回放一遍，就可以恢复出来最新的文件目录树了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5万文件，(一个文件几十个字节?)一天新增的数据才2mb，每天元数据也就多2mb，一个月也就多60mb，一年也就多700mb，几年的话，2GB，几个GB，一个大文件，几个GB，内存放几个GB是可以放的下&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="1390" y="4150" width="560" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-169">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-171" value="触发Checkpoint时基于读写锁模式保证数据快照完整" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2068" y="4130" width="292" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-173" value="基于NIO将内存文件目录树快照写入磁盘文件" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2068" y="4235" width="262" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-174" value="每次写一个最新fsimage文件的时候删除旧的fsimage文件" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="2070" y="4320" width="310" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
