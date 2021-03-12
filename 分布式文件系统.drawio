@@ -1,16 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2021-03-10T09:04:43.843Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="HEP--rC4Xumn22VDCajV" version="14.4.4" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-12T09:44:45.397Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="5-hMVZTkWIUUc8R1rXHO" version="14.4.6" type="github">
   <diagram id="p4r6dDJ0hlWNhRUB2B_c" name="第 1 页">
-    <mxGraphModel dx="866" dy="1755" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="987" dy="1757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-168" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-168" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="160" y="-106" width="1940" height="4216" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-48" value="" style="group" vertex="1" connectable="0" parent="Ek_NRwgekpg9dCOg00uJ-168">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-48" value="" style="group" parent="Ek_NRwgekpg9dCOg00uJ-168" vertex="1" connectable="0">
           <mxGeometry width="1940" height="4216" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-40" value="" style="group" vertex="1" connectable="0" parent="Ek_NRwgekpg9dCOg00uJ-48">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-40" value="" style="group" parent="Ek_NRwgekpg9dCOg00uJ-48" vertex="1" connectable="0">
           <mxGeometry width="1940" height="3720" as="geometry" />
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-1" value="分布式文件系统" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1">
@@ -76,7 +76,7 @@
         <mxCell id="-X3LDDrEnEWQOY-GoYjN-20" value="" style="group" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1" connectable="0">
           <mxGeometry x="460" y="3040" width="548" height="290" as="geometry" />
         </mxCell>
-        <mxCell id="-X3LDDrEnEWQOY-GoYjN-15" value="&lt;b&gt;优化Master机器的CPU负载：Backup节点的引入+BackupNode也可以作为冷备份&lt;/b&gt;&lt;br&gt;NameNode进程，额外分配出来一个线程，后台线程定时的去进行磁盘IO的操作(写editslog)，其实这个是很影响本地CPU负载的+大量的线程需要来更新内存的文件目录树，肯定是要加锁的,会导致更新文件目录树，和读取文件目录树写入磁盘，他们之间会产生巨大的锁的冲突（其他客户端不能更新文件目录了）&lt;br&gt;&lt;br&gt;所以引入Backup节点，当更新文件目录树的时候会发送一条消息同步给Backup节点，由Backup节点负责checkpoint操作，导出fsimage文件，然后把fsimages文件回传给NameNode进程。然后NameNode进程先把fsimage写到本地磁盘文件，然后清空editslog（因为我只需要fsimage快照之后的就可以了，之前的不需要了）&lt;br&gt;&lt;br&gt;BackupNode也可以作为冷备份&lt;br&gt;&lt;div&gt;冷备份：每隔一段时间可以去备份一下数据，每次恢复数据就是一部分，有些最新的数据一定是会丢失的&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;热备份：几乎是实时的在同步数据到其他的机器上去，如果说这台机器宕机，其他机器可以立马切换过来接管所有的操作&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="-X3LDDrEnEWQOY-GoYjN-20" vertex="1">
+        <mxCell id="-X3LDDrEnEWQOY-GoYjN-15" value="&lt;b&gt;优化Master机器的CPU负载：Backup节点的引入+BackupNode也可以作为冷备份&lt;/b&gt;&lt;br&gt;NameNode进程，额外分配出来一个线程，后台线程定时的去进行磁盘IO的操作(写editslog)，其实这个是很影响本地CPU负载的+大量的线程需要来更新内存的文件目录树，肯定是要加锁的,会导致更新文件目录树，和读取文件目录树写入磁盘，他们之间会产生巨大的锁的冲突（其他客户端不能更新文件目录了）&lt;br&gt;&lt;br&gt;所以引入Backup节点，当更新文件目录树的时候会发送一条消息同步给Backup节点，由Backup节点负责checkpoint操作，导出fsimage文件，然后把fsimages文件回传给NameNode进程。然后NameNode进程先把fsimage写到本地磁盘文件，然后清空editslog（因为我只需要fsimage快照之后的就可以了，之前的不需要了，可以基于后台线程定时清理不需要的editslog）+ 当上传了一个fsimage文件之后，就可以发送rpc请求给namenode去更新一下当前的fsimage对应的一个最大的txid是多少。&lt;br&gt;&lt;br&gt;BackupNode也可以作为冷备份&lt;br&gt;&lt;div&gt;冷备份：每隔一段时间可以去备份一下数据，每次恢复数据就是一部分，有些最新的数据一定是会丢失的&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;热备份：几乎是实时的在同步数据到其他的机器上去，如果说这台机器宕机，其他机器可以立马切换过来接管所有的操作&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="-X3LDDrEnEWQOY-GoYjN-20" vertex="1">
           <mxGeometry width="548" height="290" as="geometry" />
         </mxCell>
         <mxCell id="-X3LDDrEnEWQOY-GoYjN-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-40" source="eVI2LMavUw_wi4JRrqKb-19" target="-X3LDDrEnEWQOY-GoYjN-15" edge="1">
@@ -201,34 +201,34 @@
         <mxCell id="jODEPjkdc7zOePpG8NlD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="jODEPjkdc7zOePpG8NlD-27" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-28" value="&lt;b&gt;NameNode优雅关闭&lt;/b&gt;接口保证editslog全部写入磁盘&lt;br&gt;1.&amp;nbsp;把核心的editslog缓冲区的数据给主动刷入到磁盘里面去&lt;br&gt;2.&amp;nbsp;如果你要重启的话，此时还应该在所有的核心接口都应该加入一个判断，如果要优雅关闭了，此时不允许别人发送请求，全部返回一个异常码，把内存缓冲里仅有的数据全部刷入磁盘中" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="jODEPjkdc7zOePpG8NlD-30" vertex="1">
+        <mxCell id="jODEPjkdc7zOePpG8NlD-28" value="&lt;b&gt;NameNode优雅关闭&lt;/b&gt;接口保证editslog全部写入磁盘&lt;br&gt;1.&amp;nbsp;把核心的editslog缓冲区的数据给主动刷入到磁盘里面去&lt;br&gt;2.&amp;nbsp;如果你要重启的话，此时还应该在所有的核心接口都应该加入一个判断，如果要优雅关闭了，此时不允许别人发送请求，全部返回一个异常码，把内存缓冲里仅有的数据全部刷入磁盘中&lt;br&gt;&lt;br&gt;NameNode的优雅关闭机制再次完善：禁止访问以及持久化？" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="jODEPjkdc7zOePpG8NlD-30" vertex="1">
           <mxGeometry x="640" y="1370" width="380" height="110" as="geometry" />
         </mxCell>
         <mxCell id="jODEPjkdc7zOePpG8NlD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="jODEPjkdc7zOePpG8NlD-30" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-28" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-40" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-36">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-40" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-36" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-X3LDDrEnEWQOY-GoYjN-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-40" source="eVI2LMavUw_wi4JRrqKb-19" target="-X3LDDrEnEWQOY-GoYjN-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-44" value="&lt;b&gt;采用CopyOnWriteArrayList解决磁盘文件索引更新和读取的并发问题&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-40">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-44" value="&lt;b&gt;采用CopyOnWriteArrayList解决磁盘文件索引更新和读取的并发问题&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1">
           <mxGeometry x="1100" y="2861" width="200" height="59" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-40" source="-X3LDDrEnEWQOY-GoYjN-8" target="Ek_NRwgekpg9dCOg00uJ-44">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-40" source="-X3LDDrEnEWQOY-GoYjN-8" target="Ek_NRwgekpg9dCOg00uJ-44" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-16" value="" style="group" vertex="1" connectable="0" parent="Ek_NRwgekpg9dCOg00uJ-40">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-16" value="" style="group" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1" connectable="0">
           <mxGeometry x="1260.0008710801394" y="3330" width="605.7491289198606" height="340" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-36" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-16">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-36" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-16" vertex="1">
           <mxGeometry x="-31.881533101045292" y="-21.05263157894737" width="605.7491289198606" height="336.8421052631579" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-1" value="BackupNode" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-16">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-1" value="BackupNode" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-16" vertex="1">
           <mxGeometry x="43.57142857142856" width="73.32752613240417" height="38.94736842105264" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-16" source="Ek_NRwgekpg9dCOg00uJ-2" target="Ek_NRwgekpg9dCOg00uJ-1">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-16" source="Ek_NRwgekpg9dCOg00uJ-2" target="Ek_NRwgekpg9dCOg00uJ-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="159.40766550522648" y="125.26315789473685" />
@@ -236,37 +236,37 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-12" value="2. 同步" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-16">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-12" value="2. 同步" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Ek_NRwgekpg9dCOg00uJ-16" vertex="1">
           <mxGeometry x="159.40766550522648" y="38.94736842105264" width="53.13588850174215" height="21.05263157894737" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-16" source="Ek_NRwgekpg9dCOg00uJ-13" target="Ek_NRwgekpg9dCOg00uJ-2">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-16" source="Ek_NRwgekpg9dCOg00uJ-13" target="Ek_NRwgekpg9dCOg00uJ-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-13" value="fsimage文件" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-16">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-13" value="fsimage文件" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-16" vertex="1">
           <mxGeometry y="196.8421052631579" width="106.2717770034843" height="31.578947368421055" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-16" source="Ek_NRwgekpg9dCOg00uJ-1" target="Ek_NRwgekpg9dCOg00uJ-13">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-16" source="Ek_NRwgekpg9dCOg00uJ-1" target="Ek_NRwgekpg9dCOg00uJ-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-15" value="3. checkpoint" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-16">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-15" value="3. checkpoint" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Ek_NRwgekpg9dCOg00uJ-16" vertex="1">
           <mxGeometry x="-21.254355400696863" y="81.05263157894737" width="85.01742160278745" height="24.210526315789476" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-24" value="" style="group" vertex="1" connectable="0" parent="Ek_NRwgekpg9dCOg00uJ-16">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-24" value="" style="group" parent="Ek_NRwgekpg9dCOg00uJ-16" vertex="1" connectable="0">
           <mxGeometry x="313.5017421602787" y="175.78947368421052" width="85.01742160278745" height="118.94736842105264" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-20" value="磁盘文件" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-24">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-20" value="磁盘文件" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-24" vertex="1">
           <mxGeometry x="7.970383275261323" y="87.36842105263158" width="69.0766550522648" height="38.09473684210526" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-23" value="5.写入" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-24">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-23" value="5.写入" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Ek_NRwgekpg9dCOg00uJ-24" vertex="1">
           <mxGeometry x="-24.442508710801395" y="13.68421052631579" width="42.508710801393725" height="37.76106934001671" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-35" value="" style="group" vertex="1" connectable="0" parent="Ek_NRwgekpg9dCOg00uJ-16">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-35" value="" style="group" parent="Ek_NRwgekpg9dCOg00uJ-16" vertex="1" connectable="0">
           <mxGeometry x="201.91637630662018" y="21.05263157894737" width="340.0696864111498" height="123.15789473684211" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-10" value="" style="group" vertex="1" connectable="0" parent="Ek_NRwgekpg9dCOg00uJ-35">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-10" value="" style="group" parent="Ek_NRwgekpg9dCOg00uJ-35" vertex="1" connectable="0">
           <mxGeometry y="81.05263157894737" width="340.0696864111498" height="42.10526315789474" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-10" source="Ek_NRwgekpg9dCOg00uJ-2" target="Ek_NRwgekpg9dCOg00uJ-4">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-10" source="Ek_NRwgekpg9dCOg00uJ-2" target="Ek_NRwgekpg9dCOg00uJ-4" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="37.19512195121951" y="-49.47368421052632" />
@@ -274,86 +274,86 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-2" value="NameNode进程" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-10">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-2" value="NameNode进程" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-10" vertex="1">
           <mxGeometry y="3.1578947368421053" width="74.39024390243902" height="38.94736842105264" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-3" value="Edits log" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-10">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-3" value="Edits log" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-10" vertex="1">
           <mxGeometry x="159.40766550522648" y="12.105263157894738" width="53.13588850174215" height="21.05263157894737" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-4" value="Edits log" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-10">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-4" value="Edits log" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-10" vertex="1">
           <mxGeometry x="223.17073170731706" y="12.105263157894738" width="53.13588850174215" height="21.05263157894737" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-8" value="Edits log" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-10">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-8" value="Edits log" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-10" vertex="1">
           <mxGeometry x="286.93379790940764" y="12.105263157894738" width="53.13588850174215" height="21.05263157894737" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-9" value="1. 写入" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-10">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-9" value="1. 写入" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Ek_NRwgekpg9dCOg00uJ-10" vertex="1">
           <mxGeometry x="95.64459930313588" width="42.508710801393725" height="21.05263157894737" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-10" source="Ek_NRwgekpg9dCOg00uJ-2" target="Ek_NRwgekpg9dCOg00uJ-3">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-10" source="Ek_NRwgekpg9dCOg00uJ-2" target="Ek_NRwgekpg9dCOg00uJ-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-34" value="6.清空Eeits log" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-35">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-34" value="6.清空Eeits log" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Ek_NRwgekpg9dCOg00uJ-35" vertex="1">
           <mxGeometry x="111.58536585365853" width="93.5191637630662" height="31.578947368421055" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-16" source="Ek_NRwgekpg9dCOg00uJ-2" target="Ek_NRwgekpg9dCOg00uJ-20">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-16" source="Ek_NRwgekpg9dCOg00uJ-2" target="Ek_NRwgekpg9dCOg00uJ-20" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="276.3066202090592" y="282.10526315789474" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-18" value="4. 回传给" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-16">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-18" value="4. 回传给" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="Ek_NRwgekpg9dCOg00uJ-16" vertex="1">
           <mxGeometry x="146.65320557491285" y="196.8373684210526" width="55.26132404181184" height="21.05263157894737" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-49" target="Ek_NRwgekpg9dCOg00uJ-52">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-156" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-49" target="Ek_NRwgekpg9dCOg00uJ-52" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-49" target="Ek_NRwgekpg9dCOg00uJ-154">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-157" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-49" target="Ek_NRwgekpg9dCOg00uJ-154" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-49" target="Ek_NRwgekpg9dCOg00uJ-155">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-159" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-49" target="Ek_NRwgekpg9dCOg00uJ-155" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-49" target="Ek_NRwgekpg9dCOg00uJ-163">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-166" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-49" target="Ek_NRwgekpg9dCOg00uJ-163" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-49" value="&lt;b&gt;editslog同步机制设计&lt;/b&gt;&lt;br&gt;下边是详细说明，以后整理" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-40">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-49" value="&lt;b&gt;editslog同步机制设计&lt;/b&gt;&lt;br&gt;下边是详细说明，以后整理" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1">
           <mxGeometry x="1230" y="3055" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-52" value="pull模型" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-40">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-52" value="pull模型" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1">
           <mxGeometry x="1395" y="2976" width="85" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-155" value="避免锁争用" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-40">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-155" value="避免锁争用" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1">
           <mxGeometry x="1395" y="3146" width="85" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-154" target="Ek_NRwgekpg9dCOg00uJ-160">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-162" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-154" target="Ek_NRwgekpg9dCOg00uJ-160" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-154" value="缓存机制" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-40">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-154" value="缓存机制" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1">
           <mxGeometry x="1395" y="3068" width="85" height="34" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-160" value="&lt;div&gt;每次NameNode端都会在内存里缓存一块数据，要么是内存缓冲里的数据，要么是某个磁盘文件的数据，每个磁盘文件也就25kb，所以最多就是缓存25kb的数据。大部分的拉取，都是直接从缓存里走&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;不用频繁的读取磁盘文件，也不用频繁的申请锁去读取内存缓冲的数据&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-40">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-160" value="&lt;div&gt;每次NameNode端都会在内存里缓存一块数据，要么是内存缓冲里的数据，要么是某个磁盘文件的数据，每个磁盘文件也就25kb，所以最多就是缓存25kb的数据。大部分的拉取，都是直接从缓存里走&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;不用频繁的读取磁盘文件，也不用频繁的申请锁去读取内存缓冲的数据&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1">
           <mxGeometry x="1570" y="2974" width="401" height="94" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-163" target="Ek_NRwgekpg9dCOg00uJ-164">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-165" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-40" source="Ek_NRwgekpg9dCOg00uJ-163" target="Ek_NRwgekpg9dCOg00uJ-164" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-163" value="最后的效果" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-40">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-163" value="最后的效果" style="rounded=1;whiteSpace=wrap;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1">
           <mxGeometry x="1390" y="3216" width="116" height="44" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-164" value="基本上来说，90%的请求都是走内存缓存，不需要读磁盘，不需要竞争锁；少量的请求会读磁盘文件，或者竞争锁从内存缓冲加载数据出来；BackupNode几乎是可以实时的跟上NameNode editslog的变化" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-40">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-164" value="基本上来说，90%的请求都是走内存缓存，不需要读磁盘，不需要竞争锁；少量的请求会读磁盘文件，或者竞争锁从内存缓冲加载数据出来；BackupNode几乎是可以实时的跟上NameNode editslog的变化" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="Ek_NRwgekpg9dCOg00uJ-40" vertex="1">
           <mxGeometry x="1610.5" y="3207" width="320" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-41" value="&lt;b&gt;使用内存缓存来优化editslog同步和写入的锁争用&lt;/b&gt;&lt;br&gt;大部分的请求都是走内存缓存，避免去竞争锁拉取内存缓冲的数据；对于ArrayList写，读，不要去加锁，CopyOnWriteArrayList，读是读快照，写的时候也是基于多个快照版本来进行更新的" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-48">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-41" value="&lt;b&gt;使用内存缓存来优化editslog同步和写入的锁争用&lt;/b&gt;&lt;br&gt;大部分的请求都是走内存缓存，避免去竞争锁拉取内存缓冲的数据；对于ArrayList写，读，不要去加锁，CopyOnWriteArrayList，读是读快照，写的时候也是基于多个快照版本来进行更新的" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="Ek_NRwgekpg9dCOg00uJ-48" vertex="1">
           <mxGeometry x="1230" y="4146" width="420" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-48" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-41">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-48" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-38" value="&lt;div&gt;&lt;b&gt;NameNode同步editslog到BackUp的时候是基于数据流还是基于RPC接口？&lt;/b&gt;&lt;/div&gt;基于NIO来开发一套网络通信的程序，不停的通信尝试从NameNode那儿读取数据呢？还是说基于gRPC接口调用，每次发送一个请求就拉取10条edits log回来&lt;br&gt;&lt;br&gt;用gRPC的模式比较好一些，接口来调用，批量拉取，每次可以拉取10条~20条，1kb以内，或者1kb左右" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="Ek_NRwgekpg9dCOg00uJ-48">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-38" value="&lt;div&gt;&lt;b&gt;NameNode同步editslog到BackUp的时候是基于数据流还是基于RPC接口？&lt;/b&gt;&lt;/div&gt;基于NIO来开发一套网络通信的程序，不停的通信尝试从NameNode那儿读取数据呢？还是说基于gRPC接口调用，每次发送一个请求就拉取10条edits log回来&lt;br&gt;&lt;br&gt;用gRPC的模式比较好一些，接口来调用，批量拉取，每次可以拉取10条~20条，1kb以内，或者1kb左右" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="Ek_NRwgekpg9dCOg00uJ-48" vertex="1">
           <mxGeometry x="1230" y="3986" width="430" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-48" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-38">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-48" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jODEPjkdc7zOePpG8NlD-31" value="&lt;b&gt;Backup同步editslog到底应该是pull还是push？&lt;/b&gt;&lt;br&gt;如果是push模型：&lt;br&gt;1. 也就是NameNode每次生成一条editslog之后，都会主动发送给BackupNode，然后BackupNode接收了以后同步到自己的内存文件目录树里去，如果BackupNode挂了，NameNode不停的在内存缓冲里缓冲editslog等待BackupNode恢复吗，不现实。&lt;br&gt;2.&amp;nbsp;NameNode不停的往BackupNode去发送数据的话，就会导致BackupNode每次接收数据要写内存文件目录树，此时要加锁的，这里就会有频繁的加锁的行为，这是第一个加锁的地方；BackupNode后面如果执行checkpiont刷数据到fsimage里去也需要加锁，这是第二个加锁的地方。&lt;br&gt;可能会导致NameNode很多editslog需要积压在内存里，等待BackupNode的checkpoint执行完毕之后，释放了锁，人家NameNode的editslog才能继续发送过去，所以说这里有很多的不确定性。&lt;br&gt;如果是pull模型：&lt;br&gt;BackupNode可以不停的批量拉取NameNode那儿的editslog，每次拉取一小批，NameNode而言他不需要在内存里积压和缓冲很多的editslog去主动发送给BackupNode让他去接收，如果说BackupNode发生了checkpoint的操作之后，锁掉了内存文件目录树，此时的话呢就是BackupNode自己就不会去继续拉取editslog了，对于NameNode而言，此时根本不用去care BackupNode的事情" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="Ek_NRwgekpg9dCOg00uJ-48" vertex="1">
@@ -362,33 +362,33 @@
         <mxCell id="jODEPjkdc7zOePpG8NlD-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="Ek_NRwgekpg9dCOg00uJ-48" source="-X3LDDrEnEWQOY-GoYjN-15" target="jODEPjkdc7zOePpG8NlD-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Ek_NRwgekpg9dCOg00uJ-168" source="-X3LDDrEnEWQOY-GoYjN-15">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-167" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="Ek_NRwgekpg9dCOg00uJ-168" source="-X3LDDrEnEWQOY-GoYjN-15" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="1230" y="3086" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_NRwgekpg9dCOg00uJ-169" target="Ek_NRwgekpg9dCOg00uJ-171">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-175" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Ek_NRwgekpg9dCOg00uJ-169" target="Ek_NRwgekpg9dCOg00uJ-171" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_NRwgekpg9dCOg00uJ-169" target="Ek_NRwgekpg9dCOg00uJ-173">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-176" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Ek_NRwgekpg9dCOg00uJ-169" target="Ek_NRwgekpg9dCOg00uJ-173" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Ek_NRwgekpg9dCOg00uJ-169" target="Ek_NRwgekpg9dCOg00uJ-174">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-177" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Ek_NRwgekpg9dCOg00uJ-169" target="Ek_NRwgekpg9dCOg00uJ-174" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-169" value="&lt;b&gt;内存文件目录树在磁盘文件持久化方式的设计&lt;/b&gt;&lt;br&gt;每次fsimage代表了一颗文件目录树，每次启动直接把这个数据读取到NameNode或者是BackupNode内存里&lt;br&gt;hadoop的话呢，fsimage格式是设计的非常复杂的，其实如果用简单点的方式来实现，也就是一个JSON就可以了，直接用fastjson把他转换为一个超大的json，写入磁盘文件就可以了,这个不分段存储？是的，你这次写了一个最新的fsimage文件，上一个fsimage文件就可以给删除了&lt;br&gt;&lt;br&gt;&lt;div&gt;开启一个后台线程，定时的触发checkpint机制，把内存文件目录树，打成一个大的JSON，然后基于NIO给写入到磁盘文件里去，每个小时做一个checkpoint快照，然后接下来就保留最近一小时的editslog即可&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;下一个小时再做一个checkpoint快照，然后之前的editslog清空，再保留最近一小时的editslog即可，每个小时都有一个快照，大不了如果NameNode宕机了，就读取上一次checkpoint快照，接着把最近积累的1小时内的editslog读进内存，回放一遍，就可以恢复出来最新的文件目录树了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5万文件，(一个文件几十个字节?)一天新增的数据才2mb，每天元数据也就多2mb，一个月也就多60mb，一年也就多700mb，几年的话，2GB，几个GB，一个大文件，几个GB，内存放几个GB是可以放的下&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-169" value="&lt;b&gt;内存文件目录树在磁盘文件持久化方式的设计&lt;/b&gt;&lt;br&gt;每次fsimage代表了一颗文件目录树，每次启动直接把这个数据读取到NameNode或者是BackupNode内存里&lt;br&gt;hadoop的话呢，fsimage格式是设计的非常复杂的，其实如果用简单点的方式来实现，也就是一个JSON就可以了，直接用fastjson把他转换为一个超大的json，写入磁盘文件就可以了,这个不分段存储？是的，你这次写了一个最新的fsimage文件，上一个fsimage文件就可以给删除了&lt;br&gt;&lt;br&gt;&lt;div&gt;开启一个后台线程，定时的触发checkpint机制，把内存文件目录树，打成一个大的JSON，然后基于NIO给写入到磁盘文件里去，每个小时做一个checkpoint快照，然后接下来就保留最近一小时的editslog即可&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;下一个小时再做一个checkpoint快照，然后之前的editslog清空，再保留最近一小时的editslog即可，每个小时都有一个快照，大不了如果NameNode宕机了，就读取上一次checkpoint快照，接着把最近积累的1小时内的editslog读进内存，回放一遍，就可以恢复出来最新的文件目录树了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;5万文件，(一个文件几十个字节?)一天新增的数据才2mb，每天元数据也就多2mb，一个月也就多60mb，一年也就多700mb，几年的话，2GB，几个GB，一个大文件，几个GB，内存放几个GB是可以放的下&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1390" y="4150" width="560" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-169">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-170" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-169" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-171" value="触发Checkpoint时基于读写锁模式保证数据快照完整" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-171" value="触发Checkpoint时基于读写锁模式保证数据快照完整" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2068" y="4130" width="292" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-173" value="基于NIO将内存文件目录树快照写入磁盘文件" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-173" value="基于NIO将内存文件目录树快照写入磁盘文件" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2068" y="4235" width="262" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-174" value="每次写一个最新fsimage文件的时候删除旧的fsimage文件" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-174" value="每次写一个最新fsimage文件的时候删除旧的fsimage文件" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2070" y="4320" width="310" height="40" as="geometry" />
         </mxCell>
       </root>
