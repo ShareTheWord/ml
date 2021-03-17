@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-17T03:59:10.777Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="PjdRXoEeffszlXEEg190" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-17T06:23:04.823Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="4If9ImKXdi4cohQPf3jL" version="14.4.8" type="github">
   <diagram id="p4r6dDJ0hlWNhRUB2B_c" name="第 1 页">
-    <mxGraphModel dx="993" dy="1711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="993" dy="1763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -63,7 +63,7 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="170" y="156" />
-              <mxPoint x="170" y="4850" />
+              <mxPoint x="170" y="5756" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -396,13 +396,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eGttT9keTgmQSPXm6VAL-33" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="170" y="30" width="2000.38" height="5944" as="geometry" />
+          <mxGeometry x="170" y="30" width="2000.38" height="6241" as="geometry" />
         </mxCell>
         <mxCell id="TK4rKjRm1NxE-pY8IGcT-1" value="1. 分布式存储架构&amp;nbsp;&lt;br&gt;2. 多副本冗余架构" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
           <mxGeometry x="110" y="4049" width="160" height="70" as="geometry" />
         </mxCell>
         <mxCell id="eGttT9keTgmQSPXm6VAL-32" value="" style="group" vertex="1" connectable="0" parent="eGttT9keTgmQSPXm6VAL-33">
-          <mxGeometry x="520" y="3744" width="1480.38" height="2200" as="geometry" />
+          <mxGeometry x="520" y="3744" width="1480.38" height="2280" as="geometry" />
         </mxCell>
         <mxCell id="TK4rKjRm1NxE-pY8IGcT-6" value="&lt;span&gt;背景&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="8" width="120" height="60" as="geometry" />
@@ -497,6 +497,9 @@
         <mxCell id="eGttT9keTgmQSPXm6VAL-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-29">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-47" value="&lt;div&gt;NameNode中有哪些接口可能会被高并发的访问？&lt;br&gt;&lt;/div&gt;&lt;div&gt;上传接口：create、allocateDataNodes、informReplicaReceived&lt;/div&gt;&lt;div&gt;下载接口：chooseDataNodeFromReplicas&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+          <mxGeometry x="300" y="2206" width="420" height="80" as="geometry" />
+        </mxCell>
         <mxCell id="TK4rKjRm1NxE-pY8IGcT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
@@ -524,29 +527,40 @@
         <mxCell id="eVI2LMavUw_wi4JRrqKb-25" value="1. Slave节点定时上报心跳&lt;br&gt;2. Master节点基于心跳机制的故障节点检测&lt;br&gt;3. 基于个gRPC实现Master-Slave节点之间的通信" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
           <mxGeometry x="340" y="4440" width="275.72" height="70" as="geometry" />
         </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-14" value="大数据领域的hadoop hdfs，分布式文件系统,带来的启示" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
+          <mxGeometry x="230" y="96" width="127.05882352941177" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-41" value="通信：&lt;br&gt;基于NIO实现两个数据节点之间进行副本的复制" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="340" y="4540" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-43" value="分布式存储、多副本冗余、高可用结构、可伸缩架构、高性能架构，高并发架构&lt;br&gt;&lt;b&gt;可伸缩架构&lt;/b&gt;：集群而言，&lt;br&gt;1.1 加机器去里面，首先你得保证接下来要优先往最空的这台机器去写入数据，接下来在后台应该启动一大堆的定时任务，要慢慢的把快满的4台机器上的数据逐步逐步的迁移到空的机器上去，缓解已有4台机器的存储压力，可以让空机器放更多的数据，算法呢？197-199&lt;br&gt;2. 下线机器：下线机器，有某一台机器不需要了，关闭DataNode，把机器干掉，属于机器的宕机，人家感知到，副本会自动的去进行复制，保证数据不丢失" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="330" y="5751" width="400" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-38" value="&lt;div&gt;&lt;b&gt;高可用问题&lt;/b&gt;：&lt;/div&gt;&lt;div&gt;&lt;span&gt;1. 两个副本都挂了&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;2. 客户端向DataNode上传图片，此时DataNode挂了，如何处理？&lt;/span&gt;&lt;/div&gt;&amp;nbsp; &amp;nbsp; 发现网络故障时重新分配一个数据节点&lt;div&gt;&lt;span&gt;3. 客户端从DataNode读取图片，此时DataNode挂了，如何处理？&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 发现网络故障时重新分配一个数据节点&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;4. NameNode挂了，一个不好的方法是部署一台新的机器放上去新的fsimage，重新部署客户端，DataNode,BackupNode等等，还有一种是引入zookeeper,把NameNode的地址，&lt;/span&gt;&lt;/div&gt;写到zk里去的，然后其他的bakcupnode，datanode，客户端感知他的地址，都是通过zk来的&lt;br&gt;5. 感知到DataNode挂了，(如何感知？165节)触发这个DataNode上的所有的副本都需要新增一个异步复制的任务，交给其他的DataNode来进行副本复制，保证说每个图片都有2个副本。&lt;br&gt;5.1 DataNode挂了重启，NameNode接收数据节点存储上报的时候发现副本冗余，那就生成删除任务，然后下发给对应的数据节点" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="330" y="5480" width="410" height="260" as="geometry" />
+        </mxCell>
         <mxCell id="eGttT9keTgmQSPXm6VAL-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-38">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eGttT9keTgmQSPXm6VAL-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-43">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-34" value="高可用、高并发、高性能、可伸缩" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
-          <mxGeometry x="60" y="4790" width="120" height="60" as="geometry" />
+        <mxCell id="eGttT9keTgmQSPXm6VAL-34" value="高可用、高并发、高性能、可伸缩&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;b&gt;海量数据存储架构&lt;/b&gt;：分布式存储架构 + 可伸缩架构&lt;/div&gt;&lt;div&gt;&lt;b&gt;高可用+高容错架构&lt;/b&gt;：多副本冗余 + 副本自动迁移 + 冗余副本自动删除 + 客户端容错机制&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;高性能架构&lt;/b&gt;：尽可能提升客户端文件上传和下载的性能和速度&lt;/div&gt;&lt;div&gt;&lt;b&gt;高并发架构&lt;/b&gt;：尽可能让每个数据节点可以支撑更多的客户端的并发上传和下载&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="20" y="5611" width="240" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="eVI2LMavUw_wi4JRrqKb-14" value="大数据领域的hadoop hdfs，分布式文件系统,带来的启示" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
-          <mxGeometry x="230" y="96" width="127.05882352941177" height="60" as="geometry" />
+        <mxCell id="eGttT9keTgmQSPXm6VAL-45" value="&lt;b&gt;高并发&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;第一块：NameNode，元数据变更，能否承载高并发&lt;/div&gt;&lt;div&gt;第二块：DataNode，文件的上传和下载，能否承载高并发&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode而言，假设高峰时期，一万个客户端，同时发起请求要创建文件，一秒钟内高峰期直接来一万个请求去访问NameNode&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DataNode，1000个客户端连接到DataNode上去，同时进行文件的 上传和下载，能否扛得住&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="330" y="5931" width="420" height="189" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-38" value="&lt;div&gt;&lt;span&gt;高可用问题：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;1. 两个副本都挂了&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;2. 客户端向DataNode上传图片，此时DataNode挂了，如何处理？&lt;/span&gt;&lt;/div&gt;&amp;nbsp; &amp;nbsp; 发现网络故障时重新分配一个数据节点&lt;div&gt;&lt;span&gt;3. 客户端从DataNode读取图片，此时DataNode挂了，如何处理？&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 发现网络故障时重新分配一个数据节点&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;4. NameNode挂了，一个不好的方法是部署一台新的机器放上去新的fsimage，重新部署客户端，DataNode,BackupNode等等，还有一种是引入zookeeper,把NameNode的地址，&lt;/span&gt;&lt;/div&gt;写到zk里去的，然后其他的bakcupnode，datanode，客户端感知他的地址，都是通过zk来的&lt;br&gt;5. 感知到DataNode挂了，(如何感知？165节)触发这个DataNode上的所有的副本都需要新增一个异步复制的任务，交给其他的DataNode来进行副本复制，保证说每个图片都有2个副本。&lt;br&gt;5.1 DataNode挂了重启，NameNode接收数据节点存储上报的时候发现副本冗余，那就生成删除任务，然后下发给对应的数据节点" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
-          <mxGeometry x="230" y="4710" width="530" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-41" value="通信：&lt;br&gt;基于NIO实现两个数据节点之间进行副本的复制" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
-          <mxGeometry x="340" y="4540" width="280" height="40" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-43" value="分布式存储、多副本冗余、高可用结构、可伸缩架构、高性能架构，高并发架构&lt;br&gt;可伸缩架构：集群而言，&lt;br&gt;1.1 加机器去里面，首先你得保证接下来要优先往最空的这台机器去写入数据，接下来在后台应该启动一大堆的定时任务，要慢慢的把快满的4台机器上的数据逐步逐步的迁移到空的机器上去，缓解已有4台机器的存储压力，可以让空机器放更多的数据&lt;br&gt;2. 下线机器：下线机器，有某一台机器不需要了，关闭DataNode，把机器干掉，属于机器的宕机，人家感知到，副本会自动的去进行复制，保证数据不丢失" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
-          <mxGeometry x="230" y="4960" width="360" height="140" as="geometry" />
+        <mxCell id="eGttT9keTgmQSPXm6VAL-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-45">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-14" target="eVI2LMavUw_wi4JRrqKb-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="990" y="6020" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
