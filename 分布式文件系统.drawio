@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-15T13:16:54.532Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="CZHha4c84IH7M_S54e_X" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-17T03:59:10.777Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="PjdRXoEeffszlXEEg190" version="14.4.8" type="github">
   <diagram id="p4r6dDJ0hlWNhRUB2B_c" name="第 1 页">
-    <mxGraphModel dx="993" dy="1763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="993" dy="1711" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -46,14 +46,12 @@
         <mxCell id="jODEPjkdc7zOePpG8NlD-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-15" target="jODEPjkdc7zOePpG8NlD-31" edge="1">
           <mxGeometry x="230" y="-124" as="geometry" />
         </mxCell>
-        <mxCell id="eVI2LMavUw_wi4JRrqKb-24" value="节点通信" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="400" y="3882" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="eVI2LMavUw_wi4JRrqKb-27" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eVI2LMavUw_wi4JRrqKb-24" target="eVI2LMavUw_wi4JRrqKb-25" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
-        </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eVI2LMavUw_wi4JRrqKb-24" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
+          <mxGeometry x="230" y="-124" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="156" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="jODEPjkdc7zOePpG8NlD-2" value="23.&amp;nbsp; 最后总结hadoop的editslog思路&lt;br&gt;24.&amp;nbsp; dfs editslog编码实现&lt;br&gt;71. NameNode关闭以及重启全流程" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="690" y="3590" width="335" height="60" as="geometry" />
@@ -61,32 +59,50 @@
         <mxCell id="jODEPjkdc7zOePpG8NlD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-19" target="jODEPjkdc7zOePpG8NlD-2" edge="1">
           <mxGeometry x="230" y="-124" as="geometry" />
         </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="TK4rKjRm1NxE-pY8IGcT-1" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="eGttT9keTgmQSPXm6VAL-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eGttT9keTgmQSPXm6VAL-34">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="156" />
+              <mxPoint x="170" y="4850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="TK4rKjRm1NxE-pY8IGcT-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="156" />
+              <mxPoint x="170" y="4114" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-1" value="分布式文件系统" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="150" y="126" width="120" height="60" as="geometry" />
+          <mxGeometry x="10" y="126" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eVI2LMavUw_wi4JRrqKb-9" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="156" />
+              <mxPoint x="170" y="-24" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eVI2LMavUw_wi4JRrqKb-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.001;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eVI2LMavUw_wi4JRrqKb-19" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="170" y="156" />
+              <mxPoint x="170" y="870" />
+              <mxPoint x="400" y="870" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-18" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="470" y="106" width="540" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="eVI2LMavUw_wi4JRrqKb-14" value="大数据领域的hadoop hdfs，分布式文件系统,带来的启示" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eVI2LMavUw_wi4JRrqKb-18" vertex="1">
-          <mxGeometry y="20" width="127.05882352941177" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-16" value="1. hdfs是解决超大文件日志分析的问题（不可能一个大文件就一个计算任务扫描好几天），把大文件拆分为小文件，分散在许多机器上，每台机器有N个计算任务，每个计算任务对这个小文件进行分析，最后汇总所有个计算任务结果&lt;br&gt;2. 参照hdfs架构和源码来写我们的分布式文件系统&lt;br&gt;3. 技术上用到了磁盘读写、网络通信、数据传输、NIO技术" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eVI2LMavUw_wi4JRrqKb-18" vertex="1">
           <mxGeometry x="222.35294117647058" y="-5" width="317.64705882352945" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="eVI2LMavUw_wi4JRrqKb-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eVI2LMavUw_wi4JRrqKb-18" source="eVI2LMavUw_wi4JRrqKb-14" target="eVI2LMavUw_wi4JRrqKb-16" edge="1">
-          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="-X3LDDrEnEWQOY-GoYjN-10" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="938.47" y="336" width="1163.06" height="510" as="geometry" />
@@ -106,7 +122,7 @@
         <mxCell id="-X3LDDrEnEWQOY-GoYjN-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.632;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-19" target="-X3LDDrEnEWQOY-GoYjN-1" edge="1">
           <mxGeometry x="230" y="-124" as="geometry" />
         </mxCell>
-        <mxCell id="eVI2LMavUw_wi4JRrqKb-21" value="&lt;b&gt;Master/Slave/心跳机制&lt;/b&gt;&lt;br&gt;1. 分布式文件系统有两个角色，一个是管控角色（Master），负责管控整个集群，感知各个机器上的进程状态，每个机器上存放图片的情况，剩余多少存储空间&lt;br&gt;2. 另一个是管理的角色（Slave）是一个进程，每台机器上部署，负责管理机器上的存放的那些小图片和小文件&lt;br&gt;3.&amp;nbsp;客户端需要来上传图片，就可以先找管控进程，告诉他哪台机器上有空间，客户端就上传图片到那台机器上去就可以了&lt;br&gt;4. Slave必须给Master心跳续约，如果Master发现某个Slave一段时间内没有上报心跳，认为他宕机" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-21" value="&lt;b&gt;Master/Slave/心跳机制&lt;/b&gt;&lt;br&gt;1. 分布式文件系统有两个角色，一个是管控角色（Master），负责管控整个集群，管理所有的集群里的元数据，文件目录树，剩余多少存储空间&lt;br&gt;2. 另一个是管理的角色（Slave）是一个进程，每台机器上部署，负责管理机器上的存放的那些小图片和小文件&lt;br&gt;3.&amp;nbsp;客户端需要来上传图片，就可以先找管控进程，告诉他哪台机器上有空间，客户端就上传图片到那台机器上去就可以了&lt;br&gt;4. Slave必须给Master心跳续约，如果Master发现某个Slave一段时间内没有上报心跳，认为他宕机" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1140" y="860" width="438" height="140" as="geometry" />
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-19" target="eVI2LMavUw_wi4JRrqKb-21" edge="1">
@@ -115,7 +131,7 @@
         <mxCell id="-X3LDDrEnEWQOY-GoYjN-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-19" target="-X3LDDrEnEWQOY-GoYjN-22" edge="1">
           <mxGeometry x="230" y="-124" as="geometry">
             <Array as="points">
-              <mxPoint x="650" y="876" />
+              <mxPoint x="650" y="855" />
               <mxPoint x="650" y="550" />
             </Array>
           </mxGeometry>
@@ -125,34 +141,10 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-30" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="690" y="1236" width="1280" height="1480" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-27" value="" style="group" parent="jODEPjkdc7zOePpG8NlD-30" vertex="1" connectable="0">
-          <mxGeometry width="1280" height="1340" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-24" value="" style="group" parent="jODEPjkdc7zOePpG8NlD-27" vertex="1" connectable="0">
-          <mxGeometry width="1280" height="1240" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-23" value="" style="group" parent="jODEPjkdc7zOePpG8NlD-24" vertex="1" connectable="0">
-          <mxGeometry width="1280" height="960" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-13" value="" style="group" parent="jODEPjkdc7zOePpG8NlD-23" vertex="1" connectable="0">
-          <mxGeometry width="1230" height="730" as="geometry" />
-        </mxCell>
-        <mxCell id="-X3LDDrEnEWQOY-GoYjN-14" value="" style="group" parent="jODEPjkdc7zOePpG8NlD-13" vertex="1" connectable="0">
-          <mxGeometry width="1230" height="560" as="geometry" />
-        </mxCell>
-        <mxCell id="-X3LDDrEnEWQOY-GoYjN-8" value="&lt;b&gt;基于&lt;font color=&quot;#ff0000&quot;&gt;editslog机制&lt;/font&gt;实现Master重启之后的数据恢复，这个edits log仅仅作用于文件目录树？&lt;/b&gt;&lt;br&gt;1. 不能同步写磁盘，会导致性能很低&lt;br&gt;2.&amp;nbsp; 设计一个edits log的概念，&lt;br&gt;对文件的修改操作，先在内存buffer中写一个缓冲(说明了本次对文件目录树做了什么修改)，然后把这个缓冲刷入磁盘文件（双缓冲 机制，一个是buffer另一个是editslog日志，在刷磁盘之前，会做一个缓冲区的交换，把两块缓冲区交换一下，让后续的editslog写入另外一块空置的缓冲区里去，之前写满的一块缓冲区就可以刷入磁盘中了）&lt;br&gt;&lt;br&gt;所以如果edits log刷入了磁盘，namenode即使宕机也没关系，读取全部的editslog来回访日志，重新把日志对应的操作在内存文件目录树上执行一遍，此时就可以恢复出来一份完整的数据&lt;br&gt;如果，&lt;span&gt;edits log会先在内存缓冲里等待一会儿，所以说此时，如果 有些edits log还没刷入磁盘，此时就宕机了，会导致内存缓冲里的部分数据会丢失，如果namenode宕机，是可能会导致部分数据丢失的&lt;br&gt;&lt;/span&gt;&lt;div&gt;如果你需要系统保持高性能，你需要允许部分数据的丢失，elasticsearch、redis，都是可能会丢失部分数据的，同步写磁盘，会导致性能很低&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. 磁盘文件，editslog会不断的增长的话，采用分段存储的机制，先写入一个文件，如果说这个文件的大小达到了一定的数量之后，此时就会拆分出来一个新的文件，一般来说建议单个日志文件的大小不要超过1GB&lt;/div&gt;&lt;div&gt;4. 缺点：会导致master重启的速度过慢&lt;/div&gt;&lt;div&gt;&lt;div&gt;比如说现在你的editslog里都有几千万条日志了，此时你的NameNode一旦重启，你需要从磁盘上读出来几千万条日志，一条一条在内存里执行回放一遍，比如说一开始先是创建某个目录，创建文件，删除文件，&lt;span&gt;可能会导致你的NameNode重启的时候需要耗时几个小时都有可能&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;5. 如何解决？引入fsimages和checkpoint机制优化master重启性能，见右边说明&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="-X3LDDrEnEWQOY-GoYjN-14" vertex="1">
-          <mxGeometry x="450" y="55" width="540" height="400" as="geometry" />
-        </mxCell>
         <mxCell id="Ek_NRwgekpg9dCOg00uJ-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-36" edge="1">
           <mxGeometry x="230" y="-124" as="geometry" />
         </mxCell>
         <mxCell id="-X3LDDrEnEWQOY-GoYjN-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-19" target="-X3LDDrEnEWQOY-GoYjN-8" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="Ek_NRwgekpg9dCOg00uJ-44" edge="1">
           <mxGeometry x="230" y="-124" as="geometry" />
         </mxCell>
         <mxCell id="Ek_NRwgekpg9dCOg00uJ-16" value="" style="group" parent="1" vertex="1" connectable="0">
@@ -280,65 +272,8 @@
         <mxCell id="Ek_NRwgekpg9dCOg00uJ-164" value="基本上来说，90%的请求都是走内存缓存，不需要读磁盘，不需要竞争锁；少量的请求会读磁盘文件，或者竞争锁从内存缓冲加载数据出来；BackupNode几乎是可以实时的跟上NameNode editslog的变化" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2292.38" y="3103" width="320" height="62" as="geometry" />
         </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-22" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1840.5" y="2246" width="540" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-20" value="&lt;b&gt;editslog日志在磁盘文件上进行分段存储的机制设计&lt;/b&gt;&lt;br&gt;1. editslog如果都在一个文件里，那么如果后续做了checkpoint操作之后，你需要把checkpoint时间点之前的editslog都删了，此时怎么删呢？所有的数据都在一个文件里，你这样子是非常的不好删的&lt;br&gt;2. 每一次你刷磁盘的时候都是刷一个新的editslog日志文件，日志文件的名字就是txid~txid.log格式,如果你checkpoint之后要删除一些editslog日志文件，完全可以就把之前的一些文件给物理删除即可。&lt;br&gt;&lt;span&gt;3. 每次在落地磁盘的时候，都是把上一次落地磁盘的最大的一个txid+1&lt;br&gt;&lt;/span&gt;&lt;div&gt;0~500.log&lt;/div&gt;&lt;div&gt;501~1000.log&lt;/div&gt;&lt;div&gt;1001~1500.log&lt;/div&gt;&lt;div&gt;4. 每次落地磁盘都记录好本次落地的时候，最大的txid是多少，下一次落地磁盘就可以取出来进行命名就可以了，每次落地磁盘都是一个新的日志文件&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="jODEPjkdc7zOePpG8NlD-22" vertex="1">
-          <mxGeometry width="540" height="190" as="geometry" />
-        </mxCell>
         <mxCell id="-X3LDDrEnEWQOY-GoYjN-12" value="&lt;span&gt;&lt;b&gt;fsimages和checkpoint机制优化master重启性能&lt;/b&gt;&lt;br&gt;假设在晚上8:00的时候，突然执行了一次checkpoint操作，NameNode把一份完整的文件目录树写入到了磁盘上的fsimage里去，接着8:10，8:00~8:10之间，一共做出了几十条editslog的变更日志&lt;/span&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;此时NameNode需要重启，他会直接读取fsimage文件加载到内存里变成文件目录树，接着把edits log文件里的几十条editslog读出来，在内存的文件目录树里回放一遍&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;比如说你的有一个目录，/usr目录&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;在fsimage里只有一条数据，但是在editslog里就不只是一条了，创建操作，更新操作，重命名操作，在editslog里有多条操作日志&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1840.5" y="1216" width="560" height="210" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-4" value="&lt;b&gt;写editslog思路&lt;/b&gt;&lt;span&gt;&lt;br&gt;23。 最后总结hadoop的editslog思路&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span&gt;24。 dfs editslog编码实现&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1840.5" y="1456" width="335" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-7" value="&lt;b&gt;editslog数据存储格式为什么选用json而不是hadoop的序列化方式？&lt;/b&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; 电商系统3000万用户注册，日活300万，日订单100万，日发表评论10万人，每日几万评论到10万评论，每日评论晒图10万个小图片进入dfs，editslog每日10万条，但是每隔1h执行一次checkpoint,所以editlogs最多保留1h的editslog日志，也就是最多保留1万条记录，每条记录几十个字节，1万条就是几十K到几百K，所以使用方便的json就可以了，好处是读起来方便，如果使用特殊的序列化机制，写磁盘看起来就像乱码。还有一个可以设置每条editslog后面有换行符，一行一个记录。读取的时候就很方便了，每一行就是一个txid对应的日志，定位到某一行，然后就去读取就可以了，一行一行的读。&lt;br&gt;&amp;nbsp; &amp;nbsp; kafka使用特殊的序列化机制，因为他要尽可能紧凑的亚索消息的存储，节省磁盘开销，因为它适用于大数据日志的存储，每日可能上TB&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;分布式文件系统，文件目录树对应的磁盘文件，其实不会太大，如果太大的话，也可以分成几个文件来存放，一般来说都还好。所以说不用过于讲究，直接用简单易用的JSON格式，一行放一个editslog就可以了" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1840.5" y="1566" width="415" height="230" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-12" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1840.5" y="1866" width="520" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-10" value="&lt;b&gt;缓冲内存适用什么数据结构？&lt;/b&gt;&lt;br&gt;可以考虑用list,但是一般来说在这种情况下都是用字节数组来存放，但又不太好维护这个数组，会用一个叫做字节数组的输出流，IO流的方式，不断的往这个流里写数据，ByteArrayOutputStream，他内部就是维护了一个内存缓冲区，最后你可以从里面获取到一个字节数组，把这个字节数组通过NIO的方式，Buffer + FileChannel的方式，写入磁盘文件中，就可以了" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="jODEPjkdc7zOePpG8NlD-12" vertex="1">
-          <mxGeometry width="520" height="100" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-19" value="" style="group" parent="1" vertex="1" connectable="0">
-          <mxGeometry x="1840.5" y="2006" width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-14" value="&lt;b&gt;基于NIO FileChannel将内存缓冲数据写入磁盘文件&lt;/b&gt;&lt;br&gt;一条editslog大概50个字节，每500条=500*50=25kb就应该刷盘一次，基于NIO FileChannel模式&lt;br&gt;&lt;br&gt;&lt;div&gt;RandomAccessFile file = new RandomAccessFile(name, &quot;rw&quot;); // 读写模式，数据写入缓冲区中&lt;/div&gt;&lt;div&gt;FileOutputStream out = new FileOutputStream(file.getFD());&amp;nbsp;&lt;/div&gt;&lt;div&gt;FileChannel channel = out.getChannel();&lt;/div&gt;&lt;div&gt;channel.position(channel.size()); // 定位到文件里的最后一个位置，进行append追加写&lt;/div&gt;&lt;div&gt;byte[] data = ByteArrayOutputStream.toCharArray();&lt;/div&gt;&lt;div&gt;channel.force(false);&lt;/div&gt;&lt;div&gt;ByteArrayOutputStream.reset();&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="jODEPjkdc7zOePpG8NlD-19" vertex="1">
-          <mxGeometry width="520" height="190" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-25" value="基于txid机制实现editslog日志文件分段存储" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1840.5" y="2516" width="250" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-28" value="&lt;b&gt;NameNode优雅关闭&lt;/b&gt;接口保证editslog全部写入磁盘&lt;br&gt;1.&amp;nbsp;把核心的editslog缓冲区的数据给主动刷入到磁盘里面去&lt;br&gt;2.&amp;nbsp;如果你要重启的话，此时还应该在所有的核心接口都应该加入一个判断，如果要优雅关闭了，此时不允许别人发送请求，全部返回一个异常码，把内存缓冲里仅有的数据全部刷入磁盘中&lt;br&gt;&lt;br&gt;NameNode的优雅关闭机制再次完善：禁止访问以及持久化？" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1840.5" y="2606" width="380" height="110" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-20" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
-        </mxCell>
-        <mxCell id="Ek_NRwgekpg9dCOg00uJ-44" value="&lt;b&gt;采用CopyOnWriteArrayList解决磁盘文件索引更新和读取的并发问题&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1840.5" y="2737" width="200" height="59" as="geometry" />
-        </mxCell>
-        <mxCell id="-X3LDDrEnEWQOY-GoYjN-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="-X3LDDrEnEWQOY-GoYjN-12" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-4" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-7" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-10" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-14" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-25" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
-        </mxCell>
-        <mxCell id="jODEPjkdc7zOePpG8NlD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-28" edge="1">
-          <mxGeometry x="230" y="-124" as="geometry" />
         </mxCell>
         <mxCell id="Rj_PpyP53kRYnsVt6vML-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-15" target="Ek_NRwgekpg9dCOg00uJ-49" edge="1">
           <mxGeometry x="230" y="-124" as="geometry" />
@@ -361,146 +296,257 @@
         <mxCell id="eVI2LMavUw_wi4JRrqKb-9" value="为什么要用" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="-58.28571428571429" width="127.99999999999997" height="68.57142857142857" as="geometry" />
         </mxCell>
-        <mxCell id="eVI2LMavUw_wi4JRrqKb-11" value="1. 存储电商项目里海量的图片，还有系统里其他的一些文件（电商平台海量小文件存储的需求，比如一台图片服务器放不下1亿张图片，就采用分布式文件系统，部署在多台图片服务器上，每台服务器存放一部分图片，就可以利用多台机器的存储空间放下海量的图片资源了）&lt;br&gt;2. 也可以使用fastdfs，C语言开发的一套分布式文件系统，特别适合用作大量小文件的分布式存储系统，但是社区不活跃，里边很多的bug和坑，用在生产环境会有很多的问题；；；fastdfs用c写的，你不可能看他的源码，很难去解决和处理他里面发生的一些故障什么的&lt;br&gt;3.很多中小型公司会选择采用云服务商，按需付费，使用了多少存储空间，就给他付费多少钱，人家云平台就是自己构建了一套分布式文件系统&lt;br&gt;&lt;br&gt;最后：&lt;br&gt;1.&amp;nbsp;&amp;nbsp;我们公司需要把核心的一些图片等数据保留在自己这里，所以说选择基础架构团队自己开发了一套分布式文件系统来存放我们系统里的核心的图片数据，因为开源的fastdfs肯定是不好用的&lt;br&gt;2.&amp;nbsp;如果用第三方的云服务，其实也暂时不能完全去信赖他们" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="704" y="-124" width="575.9999999999999" height="199.99999999999997" as="geometry" />
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-11" value="1. 存储电商项目里海量的图片，还有系统里其他的一些文件（电商平台海量小文件存储的需求，比如一台图片服务器放不下1亿张图片，就采用分布式文件系统，部署在多台图片服务器上，每台服务器存放一部分图片，就可以利用多台机器的存储空间放下海量的图片资源了）&lt;br&gt;2. 也可以使用fastdfs，C语言开发的一套分布式文件系统，特别适合用作大量小文件的分布式存储系统，但是社区不活跃，里边很多的bug和坑，用在生产环境会有很多的问题；fastdfs用c写的，你不可能看他的源码，很难去解决和处理他里面发生的一些故障什么的；TFS（淘宝内部的分布式文件系统，架构设计），淘宝上面大量的店铺中的商品的小图片，4kb~400mb之间，分布式存储，元数据管理机制，副本冗余，高可用架构。很多小图片会被合并为一个大文件来存储，每个文件都会有一个对应的索引文件&lt;br&gt;3.很多中小型公司会选择采用云服务商，按需付费，使用了多少存储空间，就给他付费多少钱，人家云平台就是自己构建了一套分布式文件系统&lt;br&gt;4.&amp;nbsp;你在自己公司里在基础架构的团队，负责带了几个小弟从0开始研发了这么一套分布式存储系统，支撑了公司上亿图片的存储，里面的架构设计的思想，都是极为有价值的&lt;br&gt;&lt;br&gt;最后：&lt;br&gt;1.&amp;nbsp;&amp;nbsp;我们公司需要把核心的一些图片等数据保留在自己这里，所以说选择基础架构团队自己开发了一套分布式文件系统来存放我们系统里的核心的图片数据，因为开源的fastdfs肯定是不好用的&lt;br&gt;2.&amp;nbsp;如果用第三方的云服务，其实也暂时不能完全去信赖他们&lt;br&gt;3.&amp;nbsp;我们这边参考了HDFS的架构，Hadoop分布式文件系统，分布式计算系统，分布式资源调度系统，尤其是里面的元数据管理架构" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="690" y="-210" width="686" height="298" as="geometry" />
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-9" target="eVI2LMavUw_wi4JRrqKb-11" edge="1">
           <mxGeometry x="710" y="-248" as="geometry" />
         </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-6" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-14">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-15">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-16">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-20">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-1" value="&lt;span&gt;服务器集群&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="400" y="4380" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TK4rKjRm1NxE-pY8IGcT-6" target="TK4rKjRm1NxE-pY8IGcT-7" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-6" value="&lt;span&gt;背景&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="698" y="4070" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-7" value="&lt;span&gt;千万级用户电商平台&lt;/span&gt;&lt;br&gt;&lt;span&gt;商品的图片、评论的图片、广告图片、促销活动页面的图片&lt;/span&gt;&lt;br&gt;&lt;span&gt;来管理海量小图片&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="980" y="4070" width="170" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-14" value="&lt;div&gt;1、集群，每台机器存储部分小文件，分布式存储&lt;/div&gt;&lt;div&gt;2、高可用，每个文件有多个副本冗余&lt;/div&gt;&lt;div&gt;3、数据节点自动上报存储信息到master节点&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="698" y="4237.5" width="270" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-15" value="&lt;div&gt;冗余存储需要3个副本？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;其中2个副本是在一个机架上，另外一个副本是在别的机架上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;优缺点：3个副本的优点，就是可以实现更高的可用性，缺点，对存储空间的占用太多了，所以中小型公司两个副本就可以了(本项目选择两个副本)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="690" y="4350" width="350" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-16" value="&lt;b&gt;负载均衡&lt;/b&gt;&lt;br&gt;&lt;span&gt;基于存储数据节点大小排序机制实现多副本数据节点的选择&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="698" y="4510" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TK4rKjRm1NxE-pY8IGcT-20" target="TK4rKjRm1NxE-pY8IGcT-22" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TK4rKjRm1NxE-pY8IGcT-20" target="TK4rKjRm1NxE-pY8IGcT-23" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="TK4rKjRm1NxE-pY8IGcT-20" target="TK4rKjRm1NxE-pY8IGcT-25" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-6">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-10">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-24">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-20" value="如何把这个图片的副本传输到各个数据节点" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="698" y="4610" width="130" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-22" value="&lt;div&gt;第一种方式：管道数据流的方式&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;第二种方式：客户端多副本依次上传&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1090" y="4510" width="200" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="TK4rKjRm1NxE-pY8IGcT-23" target="TK4rKjRm1NxE-pY8IGcT-24" edge="1">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-23" value="hadoop hdfs采用第一种" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1090" y="4610" width="130" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-24" value="&lt;div&gt;1、避免客户端的网络连接资源过多，负载过重&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2、机器之间传输数据的性能更高，比客户端到服务器之间的性能要高&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1360" y="4610" width="300" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="TK4rKjRm1NxE-pY8IGcT-25" value="&lt;div&gt;咱们就是采用第二种方式即可，就是我们的定位和应对的场景，上传图片的次数并不是特别多的，网络连接的资源不会特别的频繁和负载过重，我们也就是2个副本而已，所以说你如果为了把一个副本的传递放在两台机器之间自己去做&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果采用第一种会导致编程特别的麻烦和复杂&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;哪怕我们就是客户端的机器上传图片到两个数据节点上也可以的，假定中型公司没有使用那么多的机房，比如说总共就是1个机房，大家都在一起，所以说性能的损耗并不是特别的大，所以就是还好&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="1090" y="4700" width="570" height="140" as="geometry" />
-        </mxCell>
-        <mxCell id="eVI2LMavUw_wi4JRrqKb-19" value="&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;元数据管理&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;(核心)&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;1. 纯内存支撑文件目录树修改&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;2. 双缓冲机制磁盘文件存储机制&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;3. backupNode edits log机制 checkpoint机制，fsimage冷备份恢复&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="400" y="816" width="210" height="120" as="geometry" />
-        </mxCell>
-        <mxCell id="eVI2LMavUw_wi4JRrqKb-25" value="1. Slave节点定时上报心跳&lt;br&gt;2. Master节点基于心跳机制的故障节点检测&lt;br&gt;3. 基于个gRPC实现Master-Slave节点之间的通信" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="742.14" y="3877" width="275.72" height="70" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-6" target="eGttT9keTgmQSPXm6VAL-8">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-6" value="同步异步/阻塞非阻塞&lt;br&gt;基础知识" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1090" y="4985" width="120" height="60" as="geometry" />
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-19" value="&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;元数据管理&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;(核心)&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;1. 纯内存支撑文件目录树修改&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;2. 双缓冲机制磁盘文件存储机制（editslog机制）&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;3. backupNode备份&lt;br&gt;机制 checkpoint机制，&lt;/span&gt;&lt;font color=&quot;#323232&quot;&gt;&lt;span style=&quot;font-size: 13px&quot;&gt;fsimage合并机制，实现了元数据的初步的高可用的架构（冷备份实现的）&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="400" y="770" width="210" height="170" as="geometry" />
         </mxCell>
         <mxCell id="eGttT9keTgmQSPXm6VAL-8" value="&lt;div&gt;同步 ： 自己亲自出马持银行卡到银行取钱（使用同步IO时，Java自己处理IO读写）。&lt;/div&gt;&lt;div&gt;异步 ： 委托一小弟拿银行卡到银行取钱，然后给你（使用异步IO时，Java将IO读写委托给OS处理，需要将数据缓冲区地址和大小传给OS(银行卡和密码)，OS需要支持异步IO操作API）。&lt;/div&gt;&lt;div&gt;阻塞 ： ATM排队取款，你只能等待（使用阻塞IO时，Java调用会一直阻塞到读写完成才返回）。&lt;/div&gt;&lt;div&gt;非阻塞 ： 柜台取款，取个号，然后坐在椅子上做其它事，等号广播会通知你办理，没到号你就不能去，你可以不断问大堂经理排到了没有，大堂经理如果说还没到你就不能去（使用非阻塞IO时，如果不能读写Java调用会马上返回，当IO事件分发器会通知可读写时再继续进行读写，不断循环直到读写完成）。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Java BIO (blocking I/O)： 同步并阻塞，服务器实现模式为一个连接一个线程，即客户端有连接请求时服务器端就需要启动一个线程进行处理，如果这个连接不做任何事情会造成不必要的线程开销，当然可以通过线程池机制改善。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Java NIO (non-blocking I/O)： 同步非阻塞，服务器实现模式为一个请求一个线程，即客户端发送的连接请求都会注册到多路复用器上，多路复用器轮询到连接有I/O请求时才启动一个线程进行处理。&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Java AIO :异步非阻塞&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;阻塞，针对的是IO流来说的，系统内核在IO完成之前都会卡住；同步，针对的是我们的程序和JDK API之间的关系，调用了IO API之后，就必须同步等待人家完成底层的IO操作，才可以让方法返回&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;每个数据节点，实际上都有一个NIO server，基于非阻塞的方式来监视多个客户端的连接是否有请求过来，有请求就会交给后端的架构来进行处理，所以说，我们在核心的文件上传这块，就可以用NIO来进行实现&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1432.38" y="4860" width="897.62" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-12">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-18">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-29">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-10" value="客户端到数据节点基于NIO实现的小文件传输机制" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1090" y="5250" width="120" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="eGttT9keTgmQSPXm6VAL-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-12" target="eGttT9keTgmQSPXm6VAL-16">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-12" value="沾包/拆包问题：&lt;br&gt;沾包:本来应该是两个包，但是到了服务器那块接收到了以后，把两个不同的包粘在一起交给了你的程序来处理，此时你会发现获取到的数据粘到一起去了，尴尬了，就不知道这次要处理的是哪部分的数据&lt;br&gt;拆包:本来是一个包，结果给拆分后发送，到服务器那块的时候，看到的就是两个包，先接受一个包，再接受一个包，你需要把两个包给合并起来进行处理" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1432.38" y="5230" width="738" height="100" as="geometry" />
         </mxCell>
         <mxCell id="eGttT9keTgmQSPXm6VAL-16" value="解决：&lt;br&gt;&lt;div&gt;现在没有做完美的解决方案，我的代码里仅仅是针对的是拆包问题，进行了一个定的处理，粘包，一个连接就传输 一个图片，所以一般不会出现粘包的问题&lt;/div&gt;&lt;div&gt;但是有可能会有拆包的问题&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="2320" y="5240" width="319" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-18" target="eGttT9keTgmQSPXm6VAL-19">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-18" target="eGttT9keTgmQSPXm6VAL-22">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-18" value="数据节点接收完文件之后如何让Master节点感知到？&lt;br&gt;让master节点知道说，某个文件在哪台机器上有一个副本" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1432.38" y="5425" width="178" height="60" as="geometry" />
-        </mxCell>
         <mxCell id="eGttT9keTgmQSPXm6VAL-19" value="1. datanode不能每次心跳的时候都带着全量的当前自己管理的文件的信息，这样心跳的数据里很大&lt;br&gt;2.&amp;nbsp;&lt;span&gt;正常来说如果master正在运行中，datanode就直接上报自己受到的文件即可，master在内存中就可以维护文件的每个副本在哪台机器上了。如果说master重启了，第一次收到datanode的心跳，发现datanode此时不在自己的内存数据结构里，&lt;/span&gt;&lt;span&gt;此时master应该指示datanode重新进行一次注册，在注册的时候才会带过来全量的文件存储的信息，包括datanode自己存储了哪些文件，还有就是datanode当前使用磁盘空间的总量，都应该带过来&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;但是只要注册完毕之后，后续datanode就是每次收到文件，或者是删除文件，对文件追加写才会增量上报存储信息 增量上报&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="1689" y="5380" width="811" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-22" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;异常情况&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;datanode重启：&lt;/span&gt;&lt;span&gt;很快就恢复过来了，快到master都没感知到他的宕机,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;此时可以不需要管&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;DataNode长时间停机或者是宕机：&lt;/span&gt;&lt;span&gt;高可用的环节里来讲解&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Master节点重启：此时会恢复文件目录树，但是此时所有的datanode信息都丢失，datanode还是会一如既往的发送心跳过来，此时如果接收到心跳，发现datanodes数据结构里没有他，就会让他重新注册以及上报全量的存储信息过来&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1689" y="5580" width="481" height="110" as="geometry" />
+        <mxCell id="jODEPjkdc7zOePpG8NlD-13" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="690" y="1210" width="1230" height="730" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-24" target="eGttT9keTgmQSPXm6VAL-27">
+        <mxCell id="-X3LDDrEnEWQOY-GoYjN-14" value="" style="group" parent="jODEPjkdc7zOePpG8NlD-13" vertex="1" connectable="0">
+          <mxGeometry width="1230" height="560" as="geometry" />
+        </mxCell>
+        <mxCell id="-X3LDDrEnEWQOY-GoYjN-8" value="&lt;b&gt;基于&lt;font color=&quot;#ff0000&quot;&gt;editslog机制&lt;/font&gt;实现Master重启之后的数据恢复，这个edits log仅仅作用于文件目录树？&lt;/b&gt;&lt;br&gt;1. 不能同步写磁盘，会导致性能很低&lt;br&gt;2.&amp;nbsp; 设计一个edits log的概念，&lt;br&gt;对文件的修改操作，先在内存buffer中写一个缓冲(说明了本次对文件目录树做了什么修改)，然后把这个缓冲刷入磁盘文件（双缓冲 机制，一个是buffer另一个是editslog日志，在刷磁盘之前，会做一个缓冲区的交换，把两块缓冲区交换一下，让后续的editslog写入另外一块空置的缓冲区里去，之前写满的一块缓冲区就可以刷入磁盘中了）&lt;br&gt;&lt;br&gt;所以如果edits log刷入了磁盘，namenode即使宕机也没关系，读取全部的editslog来回访日志，重新把日志对应的操作在内存文件目录树上执行一遍，此时就可以恢复出来一份完整的数据&lt;br&gt;如果，&lt;span&gt;edits log会先在内存缓冲里等待一会儿，所以说此时，如果 有些edits log还没刷入磁盘，此时就宕机了，会导致内存缓冲里的部分数据会丢失，如果namenode宕机，是可能会导致部分数据丢失的&lt;br&gt;&lt;/span&gt;&lt;div&gt;如果你需要系统保持高性能，你需要允许部分数据的丢失，elasticsearch、redis，都是可能会丢失部分数据的，同步写磁盘，会导致性能很低&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. 磁盘文件，editslog会不断的增长的话，采用分段存储的机制，先写入一个文件，如果说这个文件的大小达到了一定的数量之后，此时就会拆分出来一个新的文件，一般来说建议单个日志文件的大小不要超过1GB&lt;/div&gt;&lt;div&gt;4. 缺点：会导致master重启的速度过慢&lt;/div&gt;&lt;div&gt;&lt;div&gt;比如说现在你的editslog里都有几千万条日志了，此时你的NameNode一旦重启，你需要从磁盘上读出来几千万条日志，一条一条在内存里执行回放一遍，比如说一开始先是创建某个目录，创建文件，删除文件，&lt;span&gt;可能会导致你的NameNode重启的时候需要耗时几个小时都有可能&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;5. 如何解决？引入fsimages和checkpoint机制优化master重启性能，见右边说明&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="-X3LDDrEnEWQOY-GoYjN-14" vertex="1">
+          <mxGeometry x="450" y="55" width="540" height="400" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-31" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="1840.5" y="1440" width="540" height="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-22" value="" style="group" parent="eGttT9keTgmQSPXm6VAL-31" vertex="1" connectable="0">
+          <mxGeometry y="790" width="540" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-20" value="&lt;b&gt;editslog日志在磁盘文件上进行分段存储的机制设计&lt;/b&gt;&lt;br&gt;1. editslog如果都在一个文件里，那么如果后续做了checkpoint操作之后，你需要把checkpoint时间点之前的editslog都删了，此时怎么删呢？所有的数据都在一个文件里，你这样子是非常的不好删的&lt;br&gt;2. 每一次你刷磁盘的时候都是刷一个新的editslog日志文件，日志文件的名字就是txid~txid.log格式,如果你checkpoint之后要删除一些editslog日志文件，完全可以就把之前的一些文件给物理删除即可。&lt;br&gt;&lt;span&gt;3. 每次在落地磁盘的时候，都是把上一次落地磁盘的最大的一个txid+1&lt;br&gt;&lt;/span&gt;&lt;div&gt;0~500.log&lt;/div&gt;&lt;div&gt;501~1000.log&lt;/div&gt;&lt;div&gt;1001~1500.log&lt;/div&gt;&lt;div&gt;4. 每次落地磁盘都记录好本次落地的时候，最大的txid是多少，下一次落地磁盘就可以取出来进行命名就可以了，每次落地磁盘都是一个新的日志文件&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="jODEPjkdc7zOePpG8NlD-22" vertex="1">
+          <mxGeometry width="540" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-4" value="&lt;b&gt;写editslog思路&lt;/b&gt;&lt;span&gt;&lt;br&gt;23。 最后总结hadoop的editslog思路&lt;/span&gt;&lt;br&gt;&lt;div&gt;&lt;span&gt;24。 dfs editslog编码实现&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-31" vertex="1">
+          <mxGeometry width="335" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-7" value="&lt;b&gt;editslog数据存储格式为什么选用json而不是hadoop的序列化方式？&lt;/b&gt;&lt;br&gt;&amp;nbsp; &amp;nbsp; 电商系统3000万用户注册，日活300万，日订单100万，日发表评论10万人，每日几万评论到10万评论，每日评论晒图10万个小图片进入dfs，editslog每日10万条，但是每隔1h执行一次checkpoint,所以editlogs最多保留1h的editslog日志，也就是最多保留1万条记录，每条记录几十个字节，1万条就是几十K到几百K，所以使用方便的json就可以了，好处是读起来方便，如果使用特殊的序列化机制，写磁盘看起来就像乱码。还有一个可以设置每条editslog后面有换行符，一行一个记录。读取的时候就很方便了，每一行就是一个txid对应的日志，定位到某一行，然后就去读取就可以了，一行一行的读。&lt;br&gt;&amp;nbsp; &amp;nbsp; kafka使用特殊的序列化机制，因为他要尽可能紧凑的亚索消息的存储，节省磁盘开销，因为它适用于大数据日志的存储，每日可能上TB&lt;br&gt;&amp;nbsp; &amp;nbsp;&amp;nbsp;分布式文件系统，文件目录树对应的磁盘文件，其实不会太大，如果太大的话，也可以分成几个文件来存放，一般来说都还好。所以说不用过于讲究，直接用简单易用的JSON格式，一行放一个editslog就可以了" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-31" vertex="1">
+          <mxGeometry y="110" width="415" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-12" value="" style="group" parent="eGttT9keTgmQSPXm6VAL-31" vertex="1" connectable="0">
+          <mxGeometry y="410" width="520" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-10" value="&lt;b&gt;缓冲内存适用什么数据结构？&lt;/b&gt;&lt;br&gt;可以考虑用list,但是一般来说在这种情况下都是用字节数组来存放，但又不太好维护这个数组，会用一个叫做字节数组的输出流，IO流的方式，不断的往这个流里写数据，ByteArrayOutputStream，他内部就是维护了一个内存缓冲区，最后你可以从里面获取到一个字节数组，把这个字节数组通过NIO的方式，Buffer + FileChannel的方式，写入磁盘文件中，就可以了" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="jODEPjkdc7zOePpG8NlD-12" vertex="1">
+          <mxGeometry width="520" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-19" value="" style="group" parent="eGttT9keTgmQSPXm6VAL-31" vertex="1" connectable="0">
+          <mxGeometry y="550" width="520" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-14" value="&lt;b&gt;基于NIO FileChannel将内存缓冲数据写入磁盘文件&lt;/b&gt;&lt;br&gt;一条editslog大概50个字节，每500条=500*50=25kb就应该刷盘一次，基于NIO FileChannel模式&lt;br&gt;&lt;br&gt;&lt;div&gt;RandomAccessFile file = new RandomAccessFile(name, &quot;rw&quot;); // 读写模式，数据写入缓冲区中&lt;/div&gt;&lt;div&gt;FileOutputStream out = new FileOutputStream(file.getFD());&amp;nbsp;&lt;/div&gt;&lt;div&gt;FileChannel channel = out.getChannel();&lt;/div&gt;&lt;div&gt;channel.position(channel.size()); // 定位到文件里的最后一个位置，进行append追加写&lt;/div&gt;&lt;div&gt;byte[] data = ByteArrayOutputStream.toCharArray();&lt;/div&gt;&lt;div&gt;channel.force(false);&lt;/div&gt;&lt;div&gt;ByteArrayOutputStream.reset();&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="jODEPjkdc7zOePpG8NlD-19" vertex="1">
+          <mxGeometry width="520" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-25" value="基于txid机制实现editslog日志文件分段存储" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-31" vertex="1">
+          <mxGeometry y="1060" width="250" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-28" value="&lt;b&gt;NameNode优雅关闭&lt;/b&gt;接口保证editslog全部写入磁盘&lt;br&gt;1.&amp;nbsp;把核心的editslog缓冲区的数据给主动刷入到磁盘里面去&lt;br&gt;2.&amp;nbsp;如果你要重启的话，此时还应该在所有的核心接口都应该加入一个判断，如果要优雅关闭了，此时不允许别人发送请求，全部返回一个异常码，把内存缓冲里仅有的数据全部刷入磁盘中&lt;br&gt;&lt;br&gt;NameNode的优雅关闭机制再次完善：禁止访问以及持久化？" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-31" vertex="1">
+          <mxGeometry y="1150" width="380" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-31" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-20" edge="1">
+          <mxGeometry x="-1610.5" y="-1580" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-44" value="&lt;b&gt;采用CopyOnWriteArrayList解决磁盘文件索引更新和读取的并发问题&lt;/b&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-31" vertex="1">
+          <mxGeometry y="1281" width="200" height="59" as="geometry" />
+        </mxCell>
+        <mxCell id="-X3LDDrEnEWQOY-GoYjN-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-31" source="-X3LDDrEnEWQOY-GoYjN-8" target="-X3LDDrEnEWQOY-GoYjN-12" edge="1">
+          <mxGeometry x="-1610.5" y="-1580" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-31" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-4" edge="1">
+          <mxGeometry x="-1610.5" y="-1580" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-31" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-7" edge="1">
+          <mxGeometry x="-1610.5" y="-1580" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-31" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-10" edge="1">
+          <mxGeometry x="-1610.5" y="-1580" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-31" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-14" edge="1">
+          <mxGeometry x="-1610.5" y="-1580" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-31" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-25" edge="1">
+          <mxGeometry x="-1610.5" y="-1580" as="geometry" />
+        </mxCell>
+        <mxCell id="jODEPjkdc7zOePpG8NlD-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-31" source="-X3LDDrEnEWQOY-GoYjN-8" target="jODEPjkdc7zOePpG8NlD-28" edge="1">
+          <mxGeometry x="-1610.5" y="-1580" as="geometry" />
+        </mxCell>
+        <mxCell id="Ek_NRwgekpg9dCOg00uJ-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="Ek_NRwgekpg9dCOg00uJ-44" edge="1">
+          <mxGeometry x="-1610.5" y="-1580" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-6" target="eGttT9keTgmQSPXm6VAL-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-24" value="从分布式系统读取一个图片文件" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1090" y="6145" width="120" height="60" as="geometry" />
+        <mxCell id="eGttT9keTgmQSPXm6VAL-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-18" target="eGttT9keTgmQSPXm6VAL-19">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-27" value="&lt;div&gt;文件读取&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（1）首先当然是应该找NameNode去获取这个文件某个副本所在的机器，其实比如说有两台机器有两个副本，此时NameNode只要告诉人家客户端一个机器就可以了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（2）对NameNode而言，每次对于一个文件给人家返回某个副本所在机器的时候要采取随机的策略，这次给客户端返回的是机器01，下次最好就是机器02，很多客户端都要读取一个图片，此时会把流量均匀打散在机器01和机器02上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（3）就是应该跟那个机器进行NIO网络通信，完全可以在之前的那个代码基础之上来改一改就可以了，之前客户端从本地磁盘读取一个图片成为字节数组的数据格式，然后通过NIO把这个图片给服务器发过去，服务器读取这个图片写入自己本地磁盘；客户端先通过NIO发送一个请求过去，意思就是说，我想要读取某个图片，服务器就是从本地磁盘读取这个图片，然后给客户端写回去，客户端就读取这个图片就可以了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;目录的管理（元数据机制），文件上传，文件读取，高可用架构&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1315" y="6080" width="815" height="190" as="geometry" />
+        <mxCell id="eGttT9keTgmQSPXm6VAL-33" value="" style="group" vertex="1" connectable="0" parent="1">
+          <mxGeometry x="170" y="30" width="2000.38" height="5944" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-29" value="文件上传总：&lt;br&gt;&lt;div&gt;文件的上传都给搞定了，假设一个图片，先从NameNode获取两台机器作为多副本的存储机器，得根据机器的存储资源排序，优先选择那些存储资源数据量最少的机器，可以保持机器之间的存储量的平衡&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;接下来就可以依次通过NIO跟两台机器来通信，把文件给上传上去&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;两台机器需要主动去通知NameNode说自己收到了这个文件，每个文件有几个副本，每个副本是在哪台机器上。DataNode突然重启，快速重启，此时不需要管；如果NameNode自己突然重启，会要求各个DataNode重新上报存储；如果是集群从0开始重启，NameNode优雅关闭，接下来自然重启之后，就会重建所有的元数据&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode会fsimage和editlog重建自己的内存文件目录树，各个DataNode还会上报自己的存储信息上去，NameNode就知道这个分布式文件系统的完整文件目录树，有哪些目录和哪些文件，每个文件有几个副本，每个副本在哪些机器上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode都是知道的&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;创建目录、上传文件 -&amp;gt; 元数据管理机制 + 图片多副本分布式存储机制&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="1432.38" y="5790" width="737.62" height="260" as="geometry" />
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-1" value="1. 分布式存储架构&amp;nbsp;&lt;br&gt;2. 多副本冗余架构" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
+          <mxGeometry x="110" y="4049" width="160" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-32" value="" style="group" vertex="1" connectable="0" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="520" y="3744" width="1480.38" height="2200" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-6" value="&lt;span&gt;背景&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
+          <mxGeometry x="8" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-7" value="&lt;span&gt;千万级用户电商平台&lt;/span&gt;&lt;br&gt;&lt;span&gt;商品的图片、评论的图片、广告图片、促销活动页面的图片&lt;/span&gt;&lt;br&gt;&lt;span&gt;来管理海量小图片&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
+          <mxGeometry x="290" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-6" target="TK4rKjRm1NxE-pY8IGcT-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-14" value="&lt;div&gt;1、集群，每台机器存储部分小文件，分布式存储&lt;/div&gt;&lt;div&gt;2、高可用，每个文件有多个副本冗余&lt;/div&gt;&lt;div&gt;3、数据节点自动上报存储信息到master节点&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
+          <mxGeometry x="8" y="167.5" width="270" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-15" value="&lt;div&gt;冗余存储需要3个副本？&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;其中2个副本是在一个机架上，另外一个副本是在别的机架上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;优缺点：3个副本的优点，就是可以实现更高的可用性，缺点，对存储空间的占用太多了，所以中小型公司两个副本就可以了(本项目选择两个副本)&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
+          <mxGeometry y="280" width="350" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-16" value="&lt;b&gt;负载均衡&lt;/b&gt;&lt;br&gt;&lt;span&gt;基于存储数据节点大小排序机制实现多副本数据节点的选择&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
+          <mxGeometry x="8" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-20" value="如何把这个图片的副本传输到各个数据节点" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
+          <mxGeometry x="8" y="540" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-22" value="&lt;div&gt;第一种方式：管道数据流的方式&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;第二种方式：客户端多副本依次上传&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
+          <mxGeometry x="400" y="440" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="TK4rKjRm1NxE-pY8IGcT-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-23" value="hadoop hdfs采用第一种" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
+          <mxGeometry x="400" y="540" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="TK4rKjRm1NxE-pY8IGcT-23" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-24" value="&lt;div&gt;1、避免客户端的网络连接资源过多，负载过重&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;2、机器之间传输数据的性能更高，比客户端到服务器之间的性能要高&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
+          <mxGeometry x="670" y="540" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-23" target="TK4rKjRm1NxE-pY8IGcT-24" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-25" value="&lt;div&gt;咱们就是采用第二种方式即可，就是我们的定位和应对的场景，上传图片的次数并不是特别多的，网络连接的资源不会特别的频繁和负载过重，我们也就是2个副本而已，所以说你如果为了把一个副本的传递放在两台机器之间自己去做&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;如果采用第一种会导致编程特别的麻烦和复杂&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;哪怕我们就是客户端的机器上传图片到两个数据节点上也可以的，假定中型公司没有使用那么多的机房，比如说总共就是1个机房，大家都在一起，所以说性能的损耗并不是特别的大，所以就是还好&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
+          <mxGeometry x="400" y="630" width="570" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="TK4rKjRm1NxE-pY8IGcT-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-6" value="同步异步/阻塞非阻塞&lt;br&gt;基础知识" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+          <mxGeometry x="400" y="915" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-10" value="客户端到数据节点基于NIO实现的小文件传输机制" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+          <mxGeometry x="400" y="1180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-12" value="沾包/拆包问题：&lt;br&gt;沾包:本来应该是两个包，但是到了服务器那块接收到了以后，把两个不同的包粘在一起交给了你的程序来处理，此时你会发现获取到的数据粘到一起去了，尴尬了，就不知道这次要处理的是哪部分的数据&lt;br&gt;拆包:本来是一个包，结果给拆分后发送，到服务器那块的时候，看到的就是两个包，先接受一个包，再接受一个包，你需要把两个包给合并起来进行处理" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+          <mxGeometry x="742.3800000000001" y="1160" width="738" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-18" value="数据节点接收完文件之后如何让Master节点感知到？&lt;br&gt;让master节点知道说，某个文件在哪台机器上有一个副本" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+          <mxGeometry x="742.3800000000001" y="1355" width="178" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-22" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;异常情况&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;datanode重启：&lt;/span&gt;&lt;span&gt;很快就恢复过来了，快到master都没感知到他的宕机,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;此时可以不需要管&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;DataNode长时间停机或者是宕机：&lt;/span&gt;&lt;span&gt;高可用的环节里来讲解&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Master节点重启：此时会恢复文件目录树，但是此时所有的datanode信息都丢失，datanode还是会一如既往的发送心跳过来，此时如果接收到心跳，发现datanodes数据结构里没有他，就会让他重新注册以及上报全量的存储信息过来&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+          <mxGeometry x="999" y="1510" width="481" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-18" target="eGttT9keTgmQSPXm6VAL-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-24" value="从分布式系统读取一个图片文件" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+          <mxGeometry x="400" y="2075" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-27" value="&lt;div&gt;文件读取&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（1）首先当然是应该找NameNode去获取这个文件某个副本所在的机器，其实比如说有两台机器有两个副本，此时NameNode只要告诉人家客户端一个机器就可以了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（2）对NameNode而言，每次对于一个文件给人家返回某个副本所在机器的时候要采取随机的策略，这次给客户端返回的是机器01，下次最好就是机器02，很多客户端都要读取一个图片，此时会把流量均匀打散在机器01和机器02上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（3）就是应该跟那个机器进行NIO网络通信，完全可以在之前的那个代码基础之上来改一改就可以了，之前客户端从本地磁盘读取一个图片成为字节数组的数据格式，然后通过NIO把这个图片给服务器发过去，服务器读取这个图片写入自己本地磁盘；客户端先通过NIO发送一个请求过去，意思就是说，我想要读取某个图片，服务器就是从本地磁盘读取这个图片，然后给客户端写回去，客户端就读取这个图片就可以了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;目录的管理（元数据机制），文件上传，文件读取，高可用架构&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+          <mxGeometry x="625" y="2010" width="815" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-24" target="eGttT9keTgmQSPXm6VAL-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-29" value="文件上传总：&lt;br&gt;&lt;div&gt;文件的上传都给搞定了，假设一个图片，先从NameNode获取两台机器作为多副本的存储机器，得根据机器的存储资源排序，优先选择那些存储资源数据量最少的机器，可以保持机器之间的存储量的平衡&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;接下来就可以依次通过NIO跟两台机器来通信，把文件给上传上去&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;两台机器需要主动去通知NameNode说自己收到了这个文件，每个文件有几个副本，每个副本是在哪台机器上。DataNode突然重启，快速重启，此时不需要管；如果NameNode自己突然重启，会要求各个DataNode重新上报存储；如果是集群从0开始重启，NameNode优雅关闭，接下来自然重启之后，就会重建所有的元数据&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode会fsimage和editlog重建自己的内存文件目录树，各个DataNode还会上报自己的存储信息上去，NameNode就知道这个分布式文件系统的完整文件目录树，有哪些目录和哪些文件，每个文件有几个副本，每个副本在哪些机器上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode都是知道的&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;创建目录、上传文件 -&amp;gt; 元数据管理机制 + 图片多副本分布式存储机制&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+          <mxGeometry x="742.3800000000001" y="1720" width="737.62" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TK4rKjRm1NxE-pY8IGcT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eVI2LMavUw_wi4JRrqKb-24" target="eVI2LMavUw_wi4JRrqKb-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eVI2LMavUw_wi4JRrqKb-24" target="eGttT9keTgmQSPXm6VAL-41">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-24" value="内存管理机制、并发控制机制、磁盘读写、网络通信" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
+          <mxGeometry x="60" y="4567.5" width="190" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-25" value="1. Slave节点定时上报心跳&lt;br&gt;2. Master节点基于心跳机制的故障节点检测&lt;br&gt;3. 基于个gRPC实现Master-Slave节点之间的通信" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
+          <mxGeometry x="340" y="4440" width="275.72" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-43">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-34" value="高可用、高并发、高性能、可伸缩" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="60" y="4790" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-14" value="大数据领域的hadoop hdfs，分布式文件系统,带来的启示" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
+          <mxGeometry x="230" y="96" width="127.05882352941177" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-38" value="&lt;div&gt;&lt;span&gt;高可用问题：&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;1. 两个副本都挂了&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;2. 客户端向DataNode上传图片，此时DataNode挂了，如何处理？&lt;/span&gt;&lt;/div&gt;&amp;nbsp; &amp;nbsp; 发现网络故障时重新分配一个数据节点&lt;div&gt;&lt;span&gt;3. 客户端从DataNode读取图片，此时DataNode挂了，如何处理？&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 发现网络故障时重新分配一个数据节点&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;4. NameNode挂了，一个不好的方法是部署一台新的机器放上去新的fsimage，重新部署客户端，DataNode,BackupNode等等，还有一种是引入zookeeper,把NameNode的地址，&lt;/span&gt;&lt;/div&gt;写到zk里去的，然后其他的bakcupnode，datanode，客户端感知他的地址，都是通过zk来的&lt;br&gt;5. 感知到DataNode挂了，(如何感知？165节)触发这个DataNode上的所有的副本都需要新增一个异步复制的任务，交给其他的DataNode来进行副本复制，保证说每个图片都有2个副本。&lt;br&gt;5.1 DataNode挂了重启，NameNode接收数据节点存储上报的时候发现副本冗余，那就生成删除任务，然后下发给对应的数据节点" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="230" y="4710" width="530" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-41" value="通信：&lt;br&gt;基于NIO实现两个数据节点之间进行副本的复制" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="340" y="4540" width="280" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-43" value="分布式存储、多副本冗余、高可用结构、可伸缩架构、高性能架构，高并发架构&lt;br&gt;可伸缩架构：集群而言，&lt;br&gt;1.1 加机器去里面，首先你得保证接下来要优先往最空的这台机器去写入数据，接下来在后台应该启动一大堆的定时任务，要慢慢的把快满的4台机器上的数据逐步逐步的迁移到空的机器上去，缓解已有4台机器的存储压力，可以让空机器放更多的数据&lt;br&gt;2. 下线机器：下线机器，有某一台机器不需要了，关闭DataNode，把机器干掉，属于机器的宕机，人家感知到，副本会自动的去进行复制，保证数据不丢失" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="230" y="4960" width="360" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-14" target="eVI2LMavUw_wi4JRrqKb-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
