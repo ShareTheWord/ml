@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-18T03:55:36.678Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="mFwUnwugNm6YWMXAyrpn" version="14.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-18T11:43:30.532Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="SiFtBYa87OS6_jHR4RN9" version="14.4.9" type="github">
   <diagram id="p4r6dDJ0hlWNhRUB2B_c" name="第 1 页">
     <mxGraphModel dx="991" dy="1761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -651,6 +651,21 @@
               <mxPoint x="460" y="6920" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OCN7Az1f4drl17VqBEbt-30" target="OCN7Az1f4drl17VqBEbt-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OCN7Az1f4drl17VqBEbt-30" target="OCN7Az1f4drl17VqBEbt-33">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-30" value="仿钉钉云盘" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="7210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-31" value="Netty占5%+dfs占95%" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="310" y="7080" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-33" value="1. 创建目录(上传文件)、下载文件、分享文件&lt;br&gt;2. 常规性的云盘功能，都基于数据库来实现即可，&lt;span&gt;上传的文件先写入本地磁盘文件，然后将本地磁盘文件上传到dfs上去，才算上传结束；&lt;/span&gt;&lt;span&gt;读文件的时候，都直接从dfs上去读，因为dfs提供多副本机制，保证冗余，保证文件是安全的。这种架构比较low&lt;br&gt;&lt;/span&gt;&lt;span&gt;3. 这种low的云盘架构是云盘的元数据都在数据库里存储，上传的文件先写入本地磁盘文件，然后将本地磁盘文件上传到dfs上去，读文件的时候，都直接从dfs上去读，因为dfs提供多副本机制，保证冗余，保证文件是安全的&lt;br&gt;4. 性能瓶颈在哪？&lt;br&gt;4.1 Spring Boot依托于一个Tomcat来启动一个Web系统，Tomcat里有工作线程300个，文件上传和下载的请求是比较耗时的，大文件的上传，要搞几分钟，甚至几十分钟都有这种可能的，这里很大的一个问题。走普通的HTTP的请求，很可能会因为传输大文件时间耗时过长，就会导致说，请求超时，限制文件大小，比如说不能超过10MB，20MB，走普通的HTTP上传文件最大的问题就在于这里&lt;br&gt;4.2 同时有300个客户端都要上传文件的话，此时会占满这个Tomcat所有的工作线程的数量，此时就没法处理别的请求了&lt;br&gt;4.3&amp;nbsp;&lt;/span&gt;&lt;span&gt;每个请求必须把文件写入到文件存储中（之前自己研发的分布式海量小文件存储系统），才能返回响应，文件越大越耗时，时间太长会导致请求超时，&lt;/span&gt;&lt;span&gt;一般限制为文件大小在二三十MB以内，不能太大&lt;br&gt;&lt;/span&gt;&lt;span&gt;5. 优化？全链路基于内存传输数据&lt;br&gt;6. 高性能8、高并发9、高可用10、全链路可伸缩11&lt;br&gt;7. 文件传输的话，第一个需要解决的，就是小文件的粘包和拆包的处理。Netty中解决粘包拆包问题的核心思路是什么？自定义协议，请求头，定义好文件有多长，收文件的时候，就必须要读到那么长的文件次可以&lt;br&gt;8. 云盘系统架构，缓存使用redis、负载均衡使用zookeeper(基于ZK的协调服务&lt;br&gt;)、容错类似于dfs、Netty文件传输&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="310" y="7140" width="860" height="320" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
