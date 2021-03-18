@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-17T06:23:04.823Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="4If9ImKXdi4cohQPf3jL" version="14.4.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-18T03:09:09.142Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="BgWEDXYlpetZbkJKjoKI" version="14.4.9" type="github">
   <diagram id="p4r6dDJ0hlWNhRUB2B_c" name="第 1 页">
-    <mxGraphModel dx="993" dy="1763" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="991" dy="1761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -59,7 +59,7 @@
         <mxCell id="jODEPjkdc7zOePpG8NlD-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-19" target="jODEPjkdc7zOePpG8NlD-2" edge="1">
           <mxGeometry x="230" y="-124" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eGttT9keTgmQSPXm6VAL-34">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="eGttT9keTgmQSPXm6VAL-34" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="170" y="156" />
@@ -67,7 +67,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="TK4rKjRm1NxE-pY8IGcT-1">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-1" target="TK4rKjRm1NxE-pY8IGcT-1" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="170" y="156" />
@@ -305,16 +305,16 @@
         <mxCell id="eVI2LMavUw_wi4JRrqKb-19" value="&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;元数据管理&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;(核心)&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;1. 纯内存支撑文件目录树修改&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;2. 双缓冲机制磁盘文件存储机制（editslog机制）&lt;/span&gt;&lt;br style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px&quot;&gt;&lt;div style=&quot;resize: none ; outline: 0px ; font-size: 13px ; color: rgb(50 , 50 , 50)&quot;&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(50 , 50 , 50) ; font-size: 13px ; background-color: rgba(255 , 255 , 255 , 0.01)&quot;&gt;3. backupNode备份&lt;br&gt;机制 checkpoint机制，&lt;/span&gt;&lt;font color=&quot;#323232&quot;&gt;&lt;span style=&quot;font-size: 13px&quot;&gt;fsimage合并机制，实现了元数据的初步的高可用的架构（冷备份实现的）&lt;/span&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="400" y="770" width="210" height="170" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-8" value="&lt;div&gt;同步 ： 自己亲自出马持银行卡到银行取钱（使用同步IO时，Java自己处理IO读写）。&lt;/div&gt;&lt;div&gt;异步 ： 委托一小弟拿银行卡到银行取钱，然后给你（使用异步IO时，Java将IO读写委托给OS处理，需要将数据缓冲区地址和大小传给OS(银行卡和密码)，OS需要支持异步IO操作API）。&lt;/div&gt;&lt;div&gt;阻塞 ： ATM排队取款，你只能等待（使用阻塞IO时，Java调用会一直阻塞到读写完成才返回）。&lt;/div&gt;&lt;div&gt;非阻塞 ： 柜台取款，取个号，然后坐在椅子上做其它事，等号广播会通知你办理，没到号你就不能去，你可以不断问大堂经理排到了没有，大堂经理如果说还没到你就不能去（使用非阻塞IO时，如果不能读写Java调用会马上返回，当IO事件分发器会通知可读写时再继续进行读写，不断循环直到读写完成）。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Java BIO (blocking I/O)： 同步并阻塞，服务器实现模式为一个连接一个线程，即客户端有连接请求时服务器端就需要启动一个线程进行处理，如果这个连接不做任何事情会造成不必要的线程开销，当然可以通过线程池机制改善。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Java NIO (non-blocking I/O)： 同步非阻塞，服务器实现模式为一个请求一个线程，即客户端发送的连接请求都会注册到多路复用器上，多路复用器轮询到连接有I/O请求时才启动一个线程进行处理。&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Java AIO :异步非阻塞&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;阻塞，针对的是IO流来说的，系统内核在IO完成之前都会卡住；同步，针对的是我们的程序和JDK API之间的关系，调用了IO API之后，就必须同步等待人家完成底层的IO操作，才可以让方法返回&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;每个数据节点，实际上都有一个NIO server，基于非阻塞的方式来监视多个客户端的连接是否有请求过来，有请求就会交给后端的架构来进行处理，所以说，我们在核心的文件上传这块，就可以用NIO来进行实现&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-8" value="&lt;div&gt;同步 ： 自己亲自出马持银行卡到银行取钱（使用同步IO时，Java自己处理IO读写）。&lt;/div&gt;&lt;div&gt;异步 ： 委托一小弟拿银行卡到银行取钱，然后给你（使用异步IO时，Java将IO读写委托给OS处理，需要将数据缓冲区地址和大小传给OS(银行卡和密码)，OS需要支持异步IO操作API）。&lt;/div&gt;&lt;div&gt;阻塞 ： ATM排队取款，你只能等待（使用阻塞IO时，Java调用会一直阻塞到读写完成才返回）。&lt;/div&gt;&lt;div&gt;非阻塞 ： 柜台取款，取个号，然后坐在椅子上做其它事，等号广播会通知你办理，没到号你就不能去，你可以不断问大堂经理排到了没有，大堂经理如果说还没到你就不能去（使用非阻塞IO时，如果不能读写Java调用会马上返回，当IO事件分发器会通知可读写时再继续进行读写，不断循环直到读写完成）。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;Java BIO (blocking I/O)： 同步并阻塞，服务器实现模式为一个连接一个线程，即客户端有连接请求时服务器端就需要启动一个线程进行处理，如果这个连接不做任何事情会造成不必要的线程开销，当然可以通过线程池机制改善。&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Java NIO (non-blocking I/O)： 同步非阻塞，服务器实现模式为一个请求一个线程，即客户端发送的连接请求都会注册到多路复用器上，多路复用器轮询到连接有I/O请求时才启动一个线程进行处理。&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Java AIO :异步非阻塞&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;阻塞，针对的是IO流来说的，系统内核在IO完成之前都会卡住；同步，针对的是我们的程序和JDK API之间的关系，调用了IO API之后，就必须同步等待人家完成底层的IO操作，才可以让方法返回&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;每个数据节点，实际上都有一个NIO server，基于非阻塞的方式来监视多个客户端的连接是否有请求过来，有请求就会交给后端的架构来进行处理，所以说，我们在核心的文件上传这块，就可以用NIO来进行实现&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1432.38" y="4860" width="897.62" height="310" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-12" target="eGttT9keTgmQSPXm6VAL-16">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eGttT9keTgmQSPXm6VAL-12" target="eGttT9keTgmQSPXm6VAL-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-16" value="解决：&lt;br&gt;&lt;div&gt;现在没有做完美的解决方案，我的代码里仅仅是针对的是拆包问题，进行了一个定的处理，粘包，一个连接就传输 一个图片，所以一般不会出现粘包的问题&lt;/div&gt;&lt;div&gt;但是有可能会有拆包的问题&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-16" value="解决：&lt;br&gt;&lt;div&gt;现在没有做完美的解决方案，我的代码里仅仅是针对的是拆包问题，进行了一个定的处理，粘包，一个连接就传输 一个图片，所以一般不会出现粘包的问题&lt;/div&gt;&lt;div&gt;但是有可能会有拆包的问题&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="2320" y="5240" width="319" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-19" value="1. datanode不能每次心跳的时候都带着全量的当前自己管理的文件的信息，这样心跳的数据里很大&lt;br&gt;2.&amp;nbsp;&lt;span&gt;正常来说如果master正在运行中，datanode就直接上报自己受到的文件即可，master在内存中就可以维护文件的每个副本在哪台机器上了。如果说master重启了，第一次收到datanode的心跳，发现datanode此时不在自己的内存数据结构里，&lt;/span&gt;&lt;span&gt;此时master应该指示datanode重新进行一次注册，在注册的时候才会带过来全量的文件存储的信息，包括datanode自己存储了哪些文件，还有就是datanode当前使用磁盘空间的总量，都应该带过来&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;但是只要注册完毕之后，后续datanode就是每次收到文件，或者是删除文件，对文件追加写才会增量上报存储信息 增量上报&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-19" value="1. datanode不能每次心跳的时候都带着全量的当前自己管理的文件的信息，这样心跳的数据里很大&lt;br&gt;2.&amp;nbsp;&lt;span&gt;正常来说如果master正在运行中，datanode就直接上报自己受到的文件即可，master在内存中就可以维护文件的每个副本在哪台机器上了。如果说master重启了，第一次收到datanode的心跳，发现datanode此时不在自己的内存数据结构里，&lt;/span&gt;&lt;span&gt;此时master应该指示datanode重新进行一次注册，在注册的时候才会带过来全量的文件存储的信息，包括datanode自己存储了哪些文件，还有就是datanode当前使用磁盘空间的总量，都应该带过来&lt;/span&gt;&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;div&gt;但是只要注册完毕之后，后续datanode就是每次收到文件，或者是删除文件，对文件追加写才会增量上报存储信息 增量上报&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
           <mxGeometry x="1689" y="5380" width="811" height="150" as="geometry" />
         </mxCell>
         <mxCell id="jODEPjkdc7zOePpG8NlD-13" value="" style="group" parent="1" vertex="1" connectable="0">
@@ -326,7 +326,7 @@
         <mxCell id="-X3LDDrEnEWQOY-GoYjN-8" value="&lt;b&gt;基于&lt;font color=&quot;#ff0000&quot;&gt;editslog机制&lt;/font&gt;实现Master重启之后的数据恢复，这个edits log仅仅作用于文件目录树？&lt;/b&gt;&lt;br&gt;1. 不能同步写磁盘，会导致性能很低&lt;br&gt;2.&amp;nbsp; 设计一个edits log的概念，&lt;br&gt;对文件的修改操作，先在内存buffer中写一个缓冲(说明了本次对文件目录树做了什么修改)，然后把这个缓冲刷入磁盘文件（双缓冲 机制，一个是buffer另一个是editslog日志，在刷磁盘之前，会做一个缓冲区的交换，把两块缓冲区交换一下，让后续的editslog写入另外一块空置的缓冲区里去，之前写满的一块缓冲区就可以刷入磁盘中了）&lt;br&gt;&lt;br&gt;所以如果edits log刷入了磁盘，namenode即使宕机也没关系，读取全部的editslog来回访日志，重新把日志对应的操作在内存文件目录树上执行一遍，此时就可以恢复出来一份完整的数据&lt;br&gt;如果，&lt;span&gt;edits log会先在内存缓冲里等待一会儿，所以说此时，如果 有些edits log还没刷入磁盘，此时就宕机了，会导致内存缓冲里的部分数据会丢失，如果namenode宕机，是可能会导致部分数据丢失的&lt;br&gt;&lt;/span&gt;&lt;div&gt;如果你需要系统保持高性能，你需要允许部分数据的丢失，elasticsearch、redis，都是可能会丢失部分数据的，同步写磁盘，会导致性能很低&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;3. 磁盘文件，editslog会不断的增长的话，采用分段存储的机制，先写入一个文件，如果说这个文件的大小达到了一定的数量之后，此时就会拆分出来一个新的文件，一般来说建议单个日志文件的大小不要超过1GB&lt;/div&gt;&lt;div&gt;4. 缺点：会导致master重启的速度过慢&lt;/div&gt;&lt;div&gt;&lt;div&gt;比如说现在你的editslog里都有几千万条日志了，此时你的NameNode一旦重启，你需要从磁盘上读出来几千万条日志，一条一条在内存里执行回放一遍，比如说一开始先是创建某个目录，创建文件，删除文件，&lt;span&gt;可能会导致你的NameNode重启的时候需要耗时几个小时都有可能&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;5. 如何解决？引入fsimages和checkpoint机制优化master重启性能，见右边说明&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="-X3LDDrEnEWQOY-GoYjN-14" vertex="1">
           <mxGeometry x="450" y="55" width="540" height="400" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-31" value="" style="group" vertex="1" connectable="0" parent="1">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-31" value="" style="group" parent="1" vertex="1" connectable="0">
           <mxGeometry x="1840.5" y="1440" width="540" height="1340" as="geometry" />
         </mxCell>
         <mxCell id="jODEPjkdc7zOePpG8NlD-22" value="" style="group" parent="eGttT9keTgmQSPXm6VAL-31" vertex="1" connectable="0">
@@ -389,20 +389,20 @@
         <mxCell id="Ek_NRwgekpg9dCOg00uJ-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-X3LDDrEnEWQOY-GoYjN-8" target="Ek_NRwgekpg9dCOg00uJ-44" edge="1">
           <mxGeometry x="-1610.5" y="-1580" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-6" target="eGttT9keTgmQSPXm6VAL-8">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eGttT9keTgmQSPXm6VAL-6" target="eGttT9keTgmQSPXm6VAL-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-18" target="eGttT9keTgmQSPXm6VAL-19">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eGttT9keTgmQSPXm6VAL-18" target="eGttT9keTgmQSPXm6VAL-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-33" value="" style="group" vertex="1" connectable="0" parent="1">
-          <mxGeometry x="170" y="30" width="2000.38" height="6241" as="geometry" />
+        <mxCell id="eGttT9keTgmQSPXm6VAL-33" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="170" y="30" width="2000.38" height="6290" as="geometry" />
         </mxCell>
         <mxCell id="TK4rKjRm1NxE-pY8IGcT-1" value="1. 分布式存储架构&amp;nbsp;&lt;br&gt;2. 多副本冗余架构" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
           <mxGeometry x="110" y="4049" width="160" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-32" value="" style="group" vertex="1" connectable="0" parent="eGttT9keTgmQSPXm6VAL-33">
-          <mxGeometry x="520" y="3744" width="1480.38" height="2280" as="geometry" />
+        <mxCell id="eGttT9keTgmQSPXm6VAL-32" value="" style="group" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1" connectable="0">
+          <mxGeometry x="520" y="3744" width="1480.38" height="2326" as="geometry" />
         </mxCell>
         <mxCell id="TK4rKjRm1NxE-pY8IGcT-6" value="&lt;span&gt;背景&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="8" width="120" height="60" as="geometry" />
@@ -449,76 +449,82 @@
         <mxCell id="TK4rKjRm1NxE-pY8IGcT-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="TK4rKjRm1NxE-pY8IGcT-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-6" value="同步异步/阻塞非阻塞&lt;br&gt;基础知识" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-6" value="同步异步/阻塞非阻塞&lt;br&gt;基础知识" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="400" y="915" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-6">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-10" value="客户端到数据节点基于NIO实现的小文件传输机制" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-10" value="客户端到数据节点基于NIO实现的小文件传输机制" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="400" y="1180" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-10">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-10" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-12" value="沾包/拆包问题：&lt;br&gt;沾包:本来应该是两个包，但是到了服务器那块接收到了以后，把两个不同的包粘在一起交给了你的程序来处理，此时你会发现获取到的数据粘到一起去了，尴尬了，就不知道这次要处理的是哪部分的数据&lt;br&gt;拆包:本来是一个包，结果给拆分后发送，到服务器那块的时候，看到的就是两个包，先接受一个包，再接受一个包，你需要把两个包给合并起来进行处理" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-12" value="沾包/拆包问题：&lt;br&gt;沾包:本来应该是两个包，但是到了服务器那块接收到了以后，把两个不同的包粘在一起交给了你的程序来处理，此时你会发现获取到的数据粘到一起去了，尴尬了，就不知道这次要处理的是哪部分的数据&lt;br&gt;拆包:本来是一个包，结果给拆分后发送，到服务器那块的时候，看到的就是两个包，先接受一个包，再接受一个包，你需要把两个包给合并起来进行处理" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="742.3800000000001" y="1160" width="738" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-12">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-18" value="数据节点接收完文件之后如何让Master节点感知到？&lt;br&gt;让master节点知道说，某个文件在哪台机器上有一个副本" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-18" value="数据节点接收完文件之后如何让Master节点感知到？&lt;br&gt;让master节点知道说，某个文件在哪台机器上有一个副本" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="742.3800000000001" y="1355" width="178" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-18">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-18" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-22" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;异常情况&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;datanode重启：&lt;/span&gt;&lt;span&gt;很快就恢复过来了，快到master都没感知到他的宕机,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;此时可以不需要管&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;DataNode长时间停机或者是宕机：&lt;/span&gt;&lt;span&gt;高可用的环节里来讲解&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Master节点重启：此时会恢复文件目录树，但是此时所有的datanode信息都丢失，datanode还是会一如既往的发送心跳过来，此时如果接收到心跳，发现datanodes数据结构里没有他，就会让他重新注册以及上报全量的存储信息过来&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-22" value="&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;异常情况&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;datanode重启：&lt;/span&gt;&lt;span&gt;很快就恢复过来了，快到master都没感知到他的宕机,&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;此时可以不需要管&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;DataNode长时间停机或者是宕机：&lt;/span&gt;&lt;span&gt;高可用的环节里来讲解&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left&quot;&gt;&lt;span&gt;Master节点重启：此时会恢复文件目录树，但是此时所有的datanode信息都丢失，datanode还是会一如既往的发送心跳过来，此时如果接收到心跳，发现datanodes数据结构里没有他，就会让他重新注册以及上报全量的存储信息过来&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="999" y="1510" width="481" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-18" target="eGttT9keTgmQSPXm6VAL-22">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-18" target="eGttT9keTgmQSPXm6VAL-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-24" value="从分布式系统读取一个图片文件" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-24" value="从分布式系统读取一个图片文件" style="rounded=1;whiteSpace=wrap;html=1;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="400" y="2075" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-24">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="TK4rKjRm1NxE-pY8IGcT-20" target="eGttT9keTgmQSPXm6VAL-24" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-27" value="&lt;div&gt;文件读取&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（1）首先当然是应该找NameNode去获取这个文件某个副本所在的机器，其实比如说有两台机器有两个副本，此时NameNode只要告诉人家客户端一个机器就可以了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（2）对NameNode而言，每次对于一个文件给人家返回某个副本所在机器的时候要采取随机的策略，这次给客户端返回的是机器01，下次最好就是机器02，很多客户端都要读取一个图片，此时会把流量均匀打散在机器01和机器02上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（3）就是应该跟那个机器进行NIO网络通信，完全可以在之前的那个代码基础之上来改一改就可以了，之前客户端从本地磁盘读取一个图片成为字节数组的数据格式，然后通过NIO把这个图片给服务器发过去，服务器读取这个图片写入自己本地磁盘；客户端先通过NIO发送一个请求过去，意思就是说，我想要读取某个图片，服务器就是从本地磁盘读取这个图片，然后给客户端写回去，客户端就读取这个图片就可以了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;目录的管理（元数据机制），文件上传，文件读取，高可用架构&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-27" value="&lt;div&gt;文件读取&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（1）首先当然是应该找NameNode去获取这个文件某个副本所在的机器，其实比如说有两台机器有两个副本，此时NameNode只要告诉人家客户端一个机器就可以了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（2）对NameNode而言，每次对于一个文件给人家返回某个副本所在机器的时候要采取随机的策略，这次给客户端返回的是机器01，下次最好就是机器02，很多客户端都要读取一个图片，此时会把流量均匀打散在机器01和机器02上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;（3）就是应该跟那个机器进行NIO网络通信，完全可以在之前的那个代码基础之上来改一改就可以了，之前客户端从本地磁盘读取一个图片成为字节数组的数据格式，然后通过NIO把这个图片给服务器发过去，服务器读取这个图片写入自己本地磁盘；客户端先通过NIO发送一个请求过去，意思就是说，我想要读取某个图片，服务器就是从本地磁盘读取这个图片，然后给客户端写回去，客户端就读取这个图片就可以了&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;目录的管理（元数据机制），文件上传，文件读取，高可用架构&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="625" y="2010" width="815" height="190" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-24" target="eGttT9keTgmQSPXm6VAL-27">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-24" target="eGttT9keTgmQSPXm6VAL-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-29" value="文件上传总：&lt;br&gt;&lt;div&gt;文件的上传都给搞定了，假设一个图片，先从NameNode获取两台机器作为多副本的存储机器，得根据机器的存储资源排序，优先选择那些存储资源数据量最少的机器，可以保持机器之间的存储量的平衡&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;接下来就可以依次通过NIO跟两台机器来通信，把文件给上传上去&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;两台机器需要主动去通知NameNode说自己收到了这个文件，每个文件有几个副本，每个副本是在哪台机器上。DataNode突然重启，快速重启，此时不需要管；如果NameNode自己突然重启，会要求各个DataNode重新上报存储；如果是集群从0开始重启，NameNode优雅关闭，接下来自然重启之后，就会重建所有的元数据&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode会fsimage和editlog重建自己的内存文件目录树，各个DataNode还会上报自己的存储信息上去，NameNode就知道这个分布式文件系统的完整文件目录树，有哪些目录和哪些文件，每个文件有几个副本，每个副本在哪些机器上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode都是知道的&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;创建目录、上传文件 -&amp;gt; 元数据管理机制 + 图片多副本分布式存储机制&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-29" value="文件上传总：&lt;br&gt;&lt;div&gt;文件的上传都给搞定了，假设一个图片，先从NameNode获取两台机器作为多副本的存储机器，得根据机器的存储资源排序，优先选择那些存储资源数据量最少的机器，可以保持机器之间的存储量的平衡&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;接下来就可以依次通过NIO跟两台机器来通信，把文件给上传上去&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;两台机器需要主动去通知NameNode说自己收到了这个文件，每个文件有几个副本，每个副本是在哪台机器上。DataNode突然重启，快速重启，此时不需要管；如果NameNode自己突然重启，会要求各个DataNode重新上报存储；如果是集群从0开始重启，NameNode优雅关闭，接下来自然重启之后，就会重建所有的元数据&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode会fsimage和editlog重建自己的内存文件目录树，各个DataNode还会上报自己的存储信息上去，NameNode就知道这个分布式文件系统的完整文件目录树，有哪些目录和哪些文件，每个文件有几个副本，每个副本在哪些机器上&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode都是知道的&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;创建目录、上传文件 -&amp;gt; 元数据管理机制 + 图片多副本分布式存储机制&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="742.3800000000001" y="1720" width="737.62" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-29">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-10" target="eGttT9keTgmQSPXm6VAL-29" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-47" value="&lt;div&gt;NameNode中有哪些接口可能会被高并发的访问？&lt;br&gt;&lt;/div&gt;&lt;div&gt;上传接口：create、allocateDataNodes、informReplicaReceived&lt;/div&gt;&lt;div&gt;下载接口：chooseDataNodeFromReplicas&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+        <mxCell id="OCN7Az1f4drl17VqBEbt-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.44;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-32" source="eGttT9keTgmQSPXm6VAL-47" target="OCN7Az1f4drl17VqBEbt-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-47" value="&lt;div&gt;NameNode中有哪些接口可能会被高并发的访问？&lt;br&gt;&lt;/div&gt;&lt;div&gt;上传接口：create、allocateDataNodes、informReplicaReceived&lt;/div&gt;&lt;div&gt;下载接口：chooseDataNodeFromReplicas&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-32" vertex="1">
           <mxGeometry x="300" y="2206" width="420" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-1" value="文件上传的三个接口能否支撑几千的QPS?&lt;br&gt;NameNode节点,高配置物理机32核128G，极限支撑每秒几万请求&lt;br&gt;基于纯内存的操作，一个请求1ms不到(0.01ms)，1秒执行100个请求，1分钟10w个请求，虽然说有并发逻辑里会加锁(每个请求排队获取锁进入执行更新文件目录树的代码逻辑)，只要基于纯内存，每个请求速度极快，就可以做到每秒几万个请求&lt;br&gt;也就是，一次创建文件的请求 -&amp;gt; 更新内存里的文件目录树 -&amp;gt; editlog写入内存缓冲 -&amp;gt; 0.01毫秒 -&amp;gt; 每秒10w的文件上传/下载的请求，在NameNode这块是没有任何的瓶颈的" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-32">
+          <mxGeometry x="791.3800000000001" y="2206" width="640" height="120" as="geometry" />
         </mxCell>
         <mxCell id="TK4rKjRm1NxE-pY8IGcT-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-14">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-14" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-15">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-16">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-20">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="TK4rKjRm1NxE-pY8IGcT-1" target="TK4rKjRm1NxE-pY8IGcT-20" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eVI2LMavUw_wi4JRrqKb-24" target="eVI2LMavUw_wi4JRrqKb-25">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="eVI2LMavUw_wi4JRrqKb-24" target="eVI2LMavUw_wi4JRrqKb-25" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eVI2LMavUw_wi4JRrqKb-24" target="eGttT9keTgmQSPXm6VAL-41">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="eVI2LMavUw_wi4JRrqKb-24" target="eGttT9keTgmQSPXm6VAL-41" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-24" value="内存管理机制、并发控制机制、磁盘读写、网络通信" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
@@ -530,37 +536,64 @@
         <mxCell id="eVI2LMavUw_wi4JRrqKb-14" value="大数据领域的hadoop hdfs，分布式文件系统,带来的启示" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
           <mxGeometry x="230" y="96" width="127.05882352941177" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-41" value="通信：&lt;br&gt;基于NIO实现两个数据节点之间进行副本的复制" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-41" value="通信：&lt;br&gt;基于NIO实现两个数据节点之间进行副本的复制" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
           <mxGeometry x="340" y="4540" width="280" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-43" value="分布式存储、多副本冗余、高可用结构、可伸缩架构、高性能架构，高并发架构&lt;br&gt;&lt;b&gt;可伸缩架构&lt;/b&gt;：集群而言，&lt;br&gt;1.1 加机器去里面，首先你得保证接下来要优先往最空的这台机器去写入数据，接下来在后台应该启动一大堆的定时任务，要慢慢的把快满的4台机器上的数据逐步逐步的迁移到空的机器上去，缓解已有4台机器的存储压力，可以让空机器放更多的数据，算法呢？197-199&lt;br&gt;2. 下线机器：下线机器，有某一台机器不需要了，关闭DataNode，把机器干掉，属于机器的宕机，人家感知到，副本会自动的去进行复制，保证数据不丢失" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-43" value="分布式存储、多副本冗余、高可用结构、可伸缩架构、高性能架构，高并发架构&lt;br&gt;&lt;b&gt;可伸缩架构&lt;/b&gt;：集群而言，&lt;br&gt;1.1 加机器去里面，首先你得保证接下来要优先往最空的这台机器去写入数据，接下来在后台应该启动一大堆的定时任务，要慢慢的把快满的4台机器上的数据逐步逐步的迁移到空的机器上去，缓解已有4台机器的存储压力，可以让空机器放更多的数据，算法呢？197-199&lt;br&gt;2. 下线机器：下线机器，有某一台机器不需要了，关闭DataNode，把机器干掉，属于机器的宕机，人家感知到，副本会自动的去进行复制，保证数据不丢失" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
           <mxGeometry x="330" y="5751" width="400" height="150" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-38" value="&lt;div&gt;&lt;b&gt;高可用问题&lt;/b&gt;：&lt;/div&gt;&lt;div&gt;&lt;span&gt;1. 两个副本都挂了&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;2. 客户端向DataNode上传图片，此时DataNode挂了，如何处理？&lt;/span&gt;&lt;/div&gt;&amp;nbsp; &amp;nbsp; 发现网络故障时重新分配一个数据节点&lt;div&gt;&lt;span&gt;3. 客户端从DataNode读取图片，此时DataNode挂了，如何处理？&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 发现网络故障时重新分配一个数据节点&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;4. NameNode挂了，一个不好的方法是部署一台新的机器放上去新的fsimage，重新部署客户端，DataNode,BackupNode等等，还有一种是引入zookeeper,把NameNode的地址，&lt;/span&gt;&lt;/div&gt;写到zk里去的，然后其他的bakcupnode，datanode，客户端感知他的地址，都是通过zk来的&lt;br&gt;5. 感知到DataNode挂了，(如何感知？165节)触发这个DataNode上的所有的副本都需要新增一个异步复制的任务，交给其他的DataNode来进行副本复制，保证说每个图片都有2个副本。&lt;br&gt;5.1 DataNode挂了重启，NameNode接收数据节点存储上报的时候发现副本冗余，那就生成删除任务，然后下发给对应的数据节点" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-38" value="&lt;div&gt;&lt;b&gt;高可用问题&lt;/b&gt;：&lt;/div&gt;&lt;div&gt;&lt;span&gt;1. 两个副本都挂了&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;2. 客户端向DataNode上传图片，此时DataNode挂了，如何处理？&lt;/span&gt;&lt;/div&gt;&amp;nbsp; &amp;nbsp; 发现网络故障时重新分配一个数据节点&lt;div&gt;&lt;span&gt;3. 客户端从DataNode读取图片，此时DataNode挂了，如何处理？&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; 发现网络故障时重新分配一个数据节点&lt;span&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span&gt;4. NameNode挂了，一个不好的方法是部署一台新的机器放上去新的fsimage，重新部署客户端，DataNode,BackupNode等等，还有一种是引入zookeeper,把NameNode的地址，&lt;/span&gt;&lt;/div&gt;写到zk里去的，然后其他的bakcupnode，datanode，客户端感知他的地址，都是通过zk来的&lt;br&gt;5. 感知到DataNode挂了，(如何感知？165节)触发这个DataNode上的所有的副本都需要新增一个异步复制的任务，交给其他的DataNode来进行副本复制，保证说每个图片都有2个副本。&lt;br&gt;5.1 DataNode挂了重启，NameNode接收数据节点存储上报的时候发现副本冗余，那就生成删除任务，然后下发给对应的数据节点" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
           <mxGeometry x="330" y="5480" width="410" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-38">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-38" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-43">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-43" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-34" value="高可用、高并发、高性能、可伸缩&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;b&gt;海量数据存储架构&lt;/b&gt;：分布式存储架构 + 可伸缩架构&lt;/div&gt;&lt;div&gt;&lt;b&gt;高可用+高容错架构&lt;/b&gt;：多副本冗余 + 副本自动迁移 + 冗余副本自动删除 + 客户端容错机制&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;高性能架构&lt;/b&gt;：尽可能提升客户端文件上传和下载的性能和速度&lt;/div&gt;&lt;div&gt;&lt;b&gt;高并发架构&lt;/b&gt;：尽可能让每个数据节点可以支撑更多的客户端的并发上传和下载&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-34" value="高可用、高并发、高性能、可伸缩&lt;br&gt;&lt;br&gt;&lt;div&gt;&lt;b&gt;海量数据存储架构&lt;/b&gt;：分布式存储架构 + 可伸缩架构&lt;/div&gt;&lt;div&gt;&lt;b&gt;高可用+高容错架构&lt;/b&gt;：多副本冗余 + 副本自动迁移 + 冗余副本自动删除 + 客户端容错机制&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;高性能架构&lt;/b&gt;：尽可能提升客户端文件上传和下载的性能和速度&lt;/div&gt;&lt;div&gt;&lt;b&gt;高并发架构&lt;/b&gt;：尽可能让每个数据节点可以支撑更多的客户端的并发上传和下载&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
           <mxGeometry x="20" y="5611" width="240" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-45" value="&lt;b&gt;高并发&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;第一块：NameNode，元数据变更，能否承载高并发&lt;/div&gt;&lt;div&gt;第二块：DataNode，文件的上传和下载，能否承载高并发&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode而言，假设高峰时期，一万个客户端，同时发起请求要创建文件，一秒钟内高峰期直接来一万个请求去访问NameNode&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DataNode，1000个客户端连接到DataNode上去，同时进行文件的 上传和下载，能否扛得住&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+        <mxCell id="OCN7Az1f4drl17VqBEbt-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-45" target="OCN7Az1f4drl17VqBEbt-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-45" target="OCN7Az1f4drl17VqBEbt-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="eGttT9keTgmQSPXm6VAL-45" value="&lt;b&gt;高并发&lt;/b&gt;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;第一块：NameNode，元数据变更，能否承载高并发&lt;/div&gt;&lt;div&gt;第二块：DataNode，文件的上传和下载，能否承载高并发&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNode而言，假设高峰时期，一万个客户端，同时发起请求要创建文件，一秒钟内高峰期直接来一万个请求去访问NameNode&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;DataNode，1000个客户端连接到DataNode上去，同时进行文件的 上传和下载，能否扛得住&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="eGttT9keTgmQSPXm6VAL-33" vertex="1">
           <mxGeometry x="330" y="5931" width="420" height="189" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-45">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="eGttT9keTgmQSPXm6VAL-33" source="eGttT9keTgmQSPXm6VAL-34" target="eGttT9keTgmQSPXm6VAL-45" edge="1">
           <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="OCN7Az1f4drl17VqBEbt-4" target="OCN7Az1f4drl17VqBEbt-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-4" value="DataNode的NIO网络通信架构能支撑高并发吗？" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="820" y="6080" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-6" value="首先，必须得做静态化图片的缓存，不可能说每次都从分布式图片系统里来读，大量的静态资源可以在前置的很多地方，Nginx、缓存服务器、CDN做缓存和加速，不需要每次都请求到底层的分布式图片系统里去的&lt;br&gt;假设每秒有1万个请求，部署了10台机器，每台机器要每秒有1000个QPS，除了解析请求之外（很快），最核心最笨重的就是执行本地磁盘的读写逻辑（很慢）。目前的一个DataNode架构，每台机器接收1000个连接和请求能否实现？" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="1160" y="6090" width="570" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="eGttT9keTgmQSPXm6VAL-33" source="OCN7Az1f4drl17VqBEbt-8" target="OCN7Az1f4drl17VqBEbt-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-8" value="基于Reactor模式重新设计DataNode的网络通信架构(参考Kafka服务端的网络通信架构)" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="820" y="6160" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-10" value="&lt;div&gt;1000个客户端同时连接过来，发送请求，比较高并发的场景下，用Reactor模式来支撑是很轻松的&lt;/div&gt;&lt;div&gt;10个Processor线程，每个线程也就处理100个客户端&lt;/div&gt;&lt;div&gt;30个IO线程&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="eGttT9keTgmQSPXm6VAL-33">
+          <mxGeometry x="1075" y="6200" width="455" height="60" as="geometry" />
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-14" target="eVI2LMavUw_wi4JRrqKb-16" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="eGttT9keTgmQSPXm6VAL-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="eGttT9keTgmQSPXm6VAL-45">
+        <mxCell id="eGttT9keTgmQSPXm6VAL-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="eGttT9keTgmQSPXm6VAL-45" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="990" y="6020" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-12" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2200" y="6240" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
