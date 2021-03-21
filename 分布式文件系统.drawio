@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-03-20T07:27:37.715Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="jcaz2m91cIWUf63QT88_" version="14.4.9" type="github">
+<mxfile host="app.diagrams.net" modified="2021-03-21T03:12:49.032Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="xuWv296Mgath3JrbVVYB" version="14.4.9" type="github">
   <diagram id="p4r6dDJ0hlWNhRUB2B_c" name="第 1 页">
     <mxGraphModel dx="991" dy="1761" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -779,6 +779,42 @@
         </mxCell>
         <mxCell id="OCN7Az1f4drl17VqBEbt-80" value="自己的分布式文件系统&lt;br&gt;1. 仿照hadoop hdfs的架构和原理，hadoop源码里完全就没用netty，用原生的nio API自己构建了一套复杂的分布式存储系统，对文件的读写，对网络的通信，数据的传输。&lt;br&gt;2.&amp;nbsp;初步的学习一下gRPC，做分布式系统的远程RPC调用的&lt;br&gt;3.&amp;nbsp;包含各种复杂架构和技术原理的一套分布式存储系统，NIO、并发、RPC、并发编程、设计模式&lt;br&gt;4.&amp;nbsp;集成自己的分布式存储系统到电商平台里去，用来存储海量的电商平台的商品的图片之类的一些东西" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
           <mxGeometry x="110" y="9110" width="640" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-83" value="&lt;div&gt;&lt;b&gt;DataNodeManager(管理集群中所有的datanode的组件)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;register()&lt;/div&gt;&lt;div&gt;heartbeat()&lt;/div&gt;&lt;div&gt;allocateDataNodes()：配双副本对应的数据节点&lt;/div&gt;&lt;div&gt;DataNodeAliveMonitor()：datanode存活的监控线程&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="330" y="9680" width="310" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-95" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OCN7Az1f4drl17VqBEbt-84" target="OCN7Az1f4drl17VqBEbt-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-84" value="&lt;div&gt;&lt;b&gt;FSNamesystem(管理元数据&lt;/b&gt;&lt;b&gt;)&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FSDirectory&lt;br&gt;&lt;/div&gt;&lt;div&gt;FSEditlog&lt;br&gt;&lt;/div&gt;&lt;div&gt;checkpointTxid&lt;br&gt;&lt;/div&gt;&lt;div&gt;replicasByFilename:每个文件对应的副本所在的DataNode&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="330" y="9530" width="320" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-85" value="&lt;div&gt;&lt;b&gt;FSDirectory&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;INode：代表文件目录树中的一个目录&lt;br&gt;&lt;/div&gt;&lt;div&gt;dirTree：内存中的文件目录树&lt;/div&gt;&lt;div&gt;mkdir()&lt;br&gt;&lt;/div&gt;&lt;div&gt;create()：创建文件&lt;br&gt;&lt;/div&gt;&lt;div&gt;existFile()&lt;br&gt;&lt;/div&gt;&lt;div&gt;printDirTree()&lt;br&gt;&lt;/div&gt;&lt;div&gt;findDirectory()查找子目录&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="760" y="9520" width="300" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-86" value="&lt;div&gt;&lt;b&gt;NameNodeRpcServer(NameNode对外提rpc接口的server)&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FSNamesystem&lt;/div&gt;&lt;div&gt;DataNodeManager&lt;br&gt;&lt;/div&gt;&lt;div&gt;start()&lt;br&gt;&lt;/div&gt;&lt;div&gt;stop()&lt;br&gt;&lt;/div&gt;&lt;div&gt;blockUntilShutdown()&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="330" y="9860" width="340" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-91" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OCN7Az1f4drl17VqBEbt-88" target="OCN7Az1f4drl17VqBEbt-84">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-92" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OCN7Az1f4drl17VqBEbt-88" target="OCN7Az1f4drl17VqBEbt-83">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="OCN7Az1f4drl17VqBEbt-88" target="OCN7Az1f4drl17VqBEbt-86">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-94" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="OCN7Az1f4drl17VqBEbt-88" target="OCN7Az1f4drl17VqBEbt-90">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-88" value="&lt;div&gt;&lt;b&gt;NameNode(核心启动类)&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;FSNamesystem&lt;br&gt;&lt;/div&gt;&lt;div&gt;DataNodeManager&lt;br&gt;&lt;/div&gt;&lt;div&gt;NameNodeRpcServer&lt;br&gt;&lt;/div&gt;&lt;div&gt;FSImageUploadServer&lt;/div&gt;&lt;div&gt;start()&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="20" y="9792" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-90" value="&lt;div&gt;&lt;b&gt;FSImageUploadServer(接收backupnode上传fsimage文件的server)&lt;/b&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Selector&lt;br&gt;&lt;/div&gt;&lt;div&gt;init()&lt;br&gt;&lt;/div&gt;&lt;div&gt;run()服务启动，监听端口&lt;br&gt;&lt;/div&gt;&lt;div&gt;handleConnectRequest()：处理BackupNode连接请求&lt;br&gt;&lt;/div&gt;&lt;div&gt;handleReadableRequest()：处理发送fsimage文件的请求&lt;br&gt;&lt;/div&gt;&lt;div&gt;handleWritableRequest()：处理返回响应给BackupNode&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="330" y="10020" width="385" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="OCN7Az1f4drl17VqBEbt-96" value="&lt;b&gt;DataNode&lt;/b&gt;&lt;b&gt;(核心启动类)&lt;br&gt;&lt;/b&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;div&gt;NameNodeRpcClient:负责跟一组NameNode通信的组件&lt;br&gt;&lt;/div&gt;&lt;div&gt;HeartbeatManager&lt;br&gt;&lt;/div&gt;&lt;div&gt;StorageManager:磁盘存储管理&lt;br&gt;&lt;/div&gt;&lt;div&gt;shouldRun：是否还在运行&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="10" y="10350" width="320" height="90" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
