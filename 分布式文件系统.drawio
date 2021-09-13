@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-03-31T07:25:11.004Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="ZFbO1RLiAdCCXAkrLp-i" version="14.5.0" type="github">
+<mxfile host="app.diagrams.net" modified="2021-09-13T07:18:00.261Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36" etag="zTDawoxtxxtF4gyzXeXG" version="15.2.1" type="github">
   <diagram id="p4r6dDJ0hlWNhRUB2B_c" name="第 1 页">
-    <mxGraphModel dx="1181" dy="1928" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1048" dy="1804" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -312,8 +312,8 @@
         <mxCell id="eVI2LMavUw_wi4JRrqKb-9" value="为什么要用" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="400" y="-58.28571428571429" width="127.99999999999997" height="68.57142857142857" as="geometry" />
         </mxCell>
-        <mxCell id="eVI2LMavUw_wi4JRrqKb-11" value="1. 存储电商项目里海量的图片，还有系统里其他的一些文件（电商平台海量小文件存储的需求，比如一台图片服务器放不下1亿张图片，就采用分布式文件系统，部署在多台图片服务器上，每台服务器存放一部分图片，就可以利用多台机器的存储空间放下海量的图片资源了）&lt;br&gt;2. 也可以使用fastdfs，C语言开发的一套分布式文件系统，特别适合用作大量小文件的分布式存储系统，但是社区不活跃，里边很多的bug和坑，用在生产环境会有很多的问题；fastdfs用c写的，你不可能看他的源码，很难去解决和处理他里面发生的一些故障什么的；TFS（淘宝内部的分布式文件系统，架构设计），淘宝上面大量的店铺中的商品的小图片，4kb~400mb之间，分布式存储，元数据管理机制，副本冗余，高可用架构。很多小图片会被合并为一个大文件来存储，每个文件都会有一个对应的索引文件&lt;br&gt;3.很多中小型公司会选择采用云服务商，按需付费，使用了多少存储空间，就给他付费多少钱，人家云平台就是自己构建了一套分布式文件系统&lt;br&gt;4.&amp;nbsp;你在自己公司里在基础架构的团队，负责带了几个小弟从0开始研发了这么一套分布式存储系统，支撑了公司上亿图片的存储，里面的架构设计的思想，都是极为有价值的&lt;br&gt;&lt;br&gt;最后：&lt;br&gt;1.&amp;nbsp;&amp;nbsp;我们公司需要把核心的一些图片等数据保留在自己这里，所以说选择基础架构团队自己开发了一套分布式文件系统来存放我们系统里的核心的图片数据，因为开源的fastdfs肯定是不好用的&lt;br&gt;2.&amp;nbsp;如果用第三方的云服务，其实也暂时不能完全去信赖他们&lt;br&gt;3.&amp;nbsp;我们这边参考了HDFS的架构，Hadoop分布式文件系统，分布式计算系统，分布式资源调度系统，尤其是里面的元数据管理架构" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
-          <mxGeometry x="690" y="-210" width="686" height="298" as="geometry" />
+        <mxCell id="eVI2LMavUw_wi4JRrqKb-11" value="1. 存储电商项目里海量的图片，还有系统里其他的一些文件（电商平台海量小文件存储的需求，比如一台图片服务器放不下1亿张图片，就采用分布式文件系统，部署在多台图片服务器上，每台服务器存放一部分图片，就可以利用多台机器的存储空间放下海量的图片资源了）&lt;br&gt;2. 也可以使用fastdfs，C语言开发的一套分布式文件系统，特别适合用作大量小文件的分布式存储系统，但是社区不活跃，里边很多的bug和坑，用在生产环境会有很多的问题；fastdfs用c写的，你不可能看他的源码，很难去解决和处理他里面发生的一些故障什么的；TFS（淘宝内部的分布式文件系统，架构设计），淘宝上面大量的店铺中的商品的小图片，4kb~400mb之间，分布式存储，元数据管理机制，副本冗余，高可用架构。很多小图片会被合并为一个大文件来存储，每个文件都会有一个对应的索引文件&lt;br&gt;3.很多中小型公司会选择采用云服务商，按需付费，使用了多少存储空间，就给他付费多少钱，人家云平台就是自己构建了一套分布式文件系统&lt;br&gt;4.&amp;nbsp;你在自己公司里在基础架构的团队，负责带了几个小弟从0开始研发了这么一套分布式存储系统，支撑了公司上亿图片的存储，里面的架构设计的思想，都是极为有价值的&lt;br&gt;&lt;br&gt;最后：&lt;br&gt;1.&amp;nbsp;&amp;nbsp;我们公司需要把核心的一些图片等数据保留在自己这里，所以说选择基础架构团队自己开发了一套分布式文件系统来存放我们系统里的核心的图片数据，因为开源的fastdfs肯定是不好用的&lt;br&gt;2.&amp;nbsp;如果用第三方的云服务，其实也暂时不能完全去信赖他们&lt;br&gt;3. hdfs不适合存储大量小文件，若小文件过多，容易导致Namenode存储出现瓶颈，HDFS专为解决大数据存储问题而产生的&lt;br&gt;4.&amp;nbsp;我们这边参考了HDFS的架构，Hadoop分布式文件系统，分布式计算系统，分布式资源调度系统，尤其是里面的元数据管理架构" style="rounded=1;whiteSpace=wrap;html=1;align=left;" parent="1" vertex="1">
+          <mxGeometry x="690" y="-230" width="686" height="318" as="geometry" />
         </mxCell>
         <mxCell id="eVI2LMavUw_wi4JRrqKb-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="eVI2LMavUw_wi4JRrqKb-9" target="eVI2LMavUw_wi4JRrqKb-11" edge="1">
           <mxGeometry x="710" y="-248" as="geometry" />
